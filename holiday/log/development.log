@@ -20147,3 +20147,924 @@ Processing HolidaysController#index to atom (for 127.0.0.1 at 2012-02-22 11:42:2
   [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "holidays" [0m
 Rendering holidays/index
 Completed in 188ms (View: 176, DB: 4) | 200 OK [http://localhost/holidays.atom]
+DEPRECATION WARNING: Kernel#returning has been deprecated in favor of Object#tap. (called from enable_activerecord at /Library/Ruby/Gems/1.8/gems/mislav-will_paginate-2.3.11/lib/will_paginate.rb:39)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2012-02-22 15:41:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 54ms (View: 52, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 15:41:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (4.3ms)[0m   [0;1mSELECT * FROM "holidays" [0m
+  [4;35;1mHoliday Load (0.9ms)[0m   [0mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 133ms (View: 102, DB: 7) | 200 OK [http://localhost/holidays]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 15:41:34) [GET]
+  Parameters: {"action"=>"index", "page"=>"3", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (3.0ms)[0m   [0mSELECT * FROM "holidays" [0m
+  [4;36;1mHoliday Load (0.8ms)[0m   [0;1mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 24[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 38) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 38) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 38) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 38) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 39) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 39) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 39) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 39) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 39) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 39) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 39) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 39) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 38ms (View: 25, DB: 4) | 200 OK [http://localhost/holidays?page=3]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 15:41:35) [GET]
+  Parameters: {"action"=>"index", "page"=>"5", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (2.9ms)[0m   [0;1mSELECT * FROM "holidays" [0m
+  [4;35;1mHoliday Load (0.9ms)[0m   [0mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 48[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 41) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 41) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 41) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 41) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 41) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 41) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 42) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 42) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 42) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 42) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 42) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 42) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 38ms (View: 25, DB: 4) | 200 OK [http://localhost/holidays?page=5]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 15:41:36) [GET]
+  Parameters: {"action"=>"index", "page"=>"6", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (3.0ms)[0m   [0mSELECT * FROM "holidays" [0m
+  [4;36;1mHoliday Load (0.9ms)[0m   [0;1mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 60[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 42) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 42) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 42) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 43) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 43) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 43) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 43) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 43) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 43) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 44) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 44) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 44) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 39ms (View: 25, DB: 5) | 200 OK [http://localhost/holidays?page=6]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 15:41:37) [GET]
+  Parameters: {"action"=>"index", "page"=>"7", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (3.2ms)[0m   [0;1mSELECT * FROM "holidays" [0m
+  [4;35;1mHoliday Load (0.7ms)[0m   [0mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 72[0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 44) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 44) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 44) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 44) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 44) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 30ms (View: 18, DB: 4) | 200 OK [http://localhost/holidays?page=7]
+
+
+Processing HolidaysController#new (for 127.0.0.1 at 2012-02-22 15:41:40) [GET]
+  Parameters: {"action"=>"new", "controller"=>"holidays"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+Rendering template within layouts/application
+Rendering holidays/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/holidays/_form.html.erb:
+1: <% form_for @holiday do |f| -%>
+2:  <%= f.error_messages %>
+3: <%if current_user.id == @holiday.user.id%>
+4:     <p> <%= f.label :"Date Leaving (YYYY/MM/DD)" %><br />
+5:         <%= f.text_field :dateleaving %>
+6:     </p>
+
+    app/views/holidays/_form.html.erb:3
+    app/views/holidays/_form.html.erb:1
+    app/views/holidays/new.html.erb:14
+
+Rendered rescues/_trace (125.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 15:42:39) [GET]
+  Parameters: {"action"=>"index", "page"=>"1", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (3.1ms)[0m   [0;1mSELECT * FROM "holidays" [0m
+  [4;35;1mHoliday Load (0.8ms)[0m   [0mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 37ms (View: 24, DB: 5) | 200 OK [http://localhost/holidays?page=1]
+
+
+Processing HolidaysController#show (for 127.0.0.1 at 2012-02-22 15:42:41) [GET]
+  Parameters: {"action"=>"show", "id"=>"77", "controller"=>"holidays"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mHoliday Load (0.2ms)[0m   [0;1mSELECT * FROM "holidays" WHERE ("holidays"."id" = 77) [0m
+Rendering template within layouts/application
+Rendering holidays/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 23ms (View: 11, DB: 1) | 200 OK [http://localhost/holidays/77]
+
+
+Processing HolidaysController#edit (for 127.0.0.1 at 2012-02-22 15:42:46) [GET]
+  Parameters: {"action"=>"edit", "id"=>"77", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (0.2ms)[0m   [0;1mSELECT * FROM "holidays" WHERE ("holidays"."id" = 77) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+Rendering template within layouts/application
+Rendering holidays/edit
+Rendered holidays/_form (5.4ms)
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 27ms (View: 16, DB: 1) | 200 OK [http://localhost/holidays/77/edit]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 15:42:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (3.0ms)[0m   [0mSELECT * FROM "holidays" [0m
+  [4;36;1mHoliday Load (0.8ms)[0m   [0;1mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 38ms (View: 24, DB: 5) | 200 OK [http://localhost/holidays]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2012-02-22 15:42:50) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2012-02-22 15:42:52) [POST]
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"H8MoNwHLwQaJtDyA5Bv0daCUP23M+It6hRV2O+43md0=", "controller"=>"sessions", "login"=>"Mo", "password"=>"[FILTERED]"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'Mo') LIMIT 1[0m
+Redirected to http://localhost:3000/holidays
+Completed in 90ms (DB: 0) | 302 Found [http://localhost/sessions]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 15:42:52) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (2.9ms)[0m   [0mSELECT * FROM "holidays" [0m
+  [4;36;1mHoliday Load (0.8ms)[0m   [0;1mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 40ms (View: 26, DB: 5) | 200 OK [http://localhost/holidays]
+
+
+Processing HolidaysController#show (for 127.0.0.1 at 2012-02-22 15:42:54) [GET]
+  Parameters: {"action"=>"show", "id"=>"77", "controller"=>"holidays"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+  [4;35;1mHoliday Load (0.2ms)[0m   [0mSELECT * FROM "holidays" WHERE ("holidays"."id" = 77) [0m
+Rendering template within layouts/application
+Rendering holidays/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 86ms (View: 76, DB: 0) | 200 OK [http://localhost/holidays/77]
+
+
+Processing HolidaysController#edit (for 127.0.0.1 at 2012-02-22 15:42:56) [GET]
+  Parameters: {"action"=>"edit", "id"=>"77", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (0.2ms)[0m   [0mSELECT * FROM "holidays" WHERE ("holidays"."id" = 77) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+Rendering template within layouts/application
+Rendering holidays/edit
+Rendered holidays/_form (7.0ms)
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/holidays/77/edit]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 15:43:05) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (3.0ms)[0m   [0;1mSELECT * FROM "holidays" [0m
+  [4;35;1mHoliday Load (0.8ms)[0m   [0mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 38ms (View: 24, DB: 5) | 200 OK [http://localhost/holidays]
+
+
+Processing HolidaysController#new (for 127.0.0.1 at 2012-02-22 15:43:07) [GET]
+  Parameters: {"action"=>"new", "controller"=>"holidays"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+Rendering template within layouts/application
+Rendering holidays/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/holidays/_form.html.erb:
+1: <% form_for @holiday do |f| -%>
+2:  <%= f.error_messages %>
+3: <%if current_user.id == @holiday.user.id%>
+4:     <p> <%= f.label :"Date Leaving (YYYY/MM/DD)" %><br />
+5:         <%= f.text_field :dateleaving %>
+6:     </p>
+
+    app/views/holidays/_form.html.erb:3
+    app/views/holidays/_form.html.erb:1
+    app/views/holidays/new.html.erb:14
+
+Rendered rescues/_trace (124.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HolidaysController#new (for 127.0.0.1 at 2012-02-22 15:44:11) [GET]
+  Parameters: {"action"=>"new", "controller"=>"holidays"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+Rendering template within layouts/application
+Rendering holidays/new
+ERROR: compiling _run_erb_app47views47holidays47_form46html46erb_locals_form_object RAISED compile error
+/Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/holidays/_form.html.erb:28: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47holidays47_form46html46erb_locals_form_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];form = local_assigns[:form];;@output_buffer = '';  __in_erb_template=true ;  form_for @holiday do |f| 
+@output_buffer.concat " "; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n"
+; if current_user.id != @holiday.user.id; @output_buffer.concat "\nYou cannot edit this page\r\n"
+
+;  end ; @output_buffer.concat "\n    <p> "
+; @output_buffer.concat(( f.label :"Date Leaving (YYYY/MM/DD)" ).to_s); @output_buffer.concat "<br />\r\n        "
+; @output_buffer.concat(( f.text_field :dateleaving ).to_s); @output_buffer.concat "\r\n    </p>\n <p> "
+
+; @output_buffer.concat(( f.label :"Date Returning (YYYY/MM/DD)" ).to_s); @output_buffer.concat "<br />\r\n        "
+; @output_buffer.concat(( f.text_field :datereturning ).to_s); @output_buffer.concat "\r\n    </p>\n  <p> "
+
+; @output_buffer.concat(( f.submit 'Save' ).to_s); @output_buffer.concat "</p>\n"
+;  end ; @output_buffer.concat "\n"
+;  if current_user.admin == true ; @output_buffer.concat "\n<p> "
+; @output_buffer.concat(( f.label :"Approved?" ).to_s); @output_buffer.concat "<br />\r\n        "
+; @output_buffer.concat(( f.check_box :approved ).to_s); @output_buffer.concat "\r\n    </p>\n<p> "
+
+; @output_buffer.concat(( f.label :"Declined?" ).to_s); @output_buffer.concat "<br />\r\n        "
+; @output_buffer.concat(( f.check_box :declined ).to_s); @output_buffer.concat "\r\n    </p>\n<p> "
+
+; @output_buffer.concat(( f.label :"Comments" ).to_s); @output_buffer.concat "<br />\r\n        "
+; @output_buffer.concat(( f.text_area :comments ).to_s); @output_buffer.concat "\n  <p> "
+; @output_buffer.concat(( f.submit 'Save' ).to_s); @output_buffer.concat "</p>\n"
+;  end ; @output_buffer.concat "\nYou cannot edit this page\r\n  "
+
+;  end ; @output_buffer.concat "\r\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/holidays/_form.html.erb:28:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable_partial.rb:20:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable_partial.rb:19:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/partials.rb:184:in `render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/base.rb:267:in `render'
+/Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/holidays/new.html.erb:14:in `_run_erb_app47views47holidays47new46html46erb'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:34:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:34:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/base.rb:306:in `with_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:30:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/base.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1252:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1328:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/flash.rb:151:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/routing/route_set.rb:438:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.11/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:47:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:41:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.11/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/handler/mongrel.rb:67:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/handler/mongrel.rb:38:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.11/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/holidays/_form.html.erb:28: syntax error, unexpected kENSURE, expecting $end) on line #28 of app/views/holidays/_form.html.erb:
+25: You cannot edit this page
+26:   <% end %>
+
+    app/views/holidays/_form.html.erb:28:in `compile!'
+    app/views/holidays/new.html.erb:14
+
+Rendered rescues/_trace (126.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HolidaysController#new (for 127.0.0.1 at 2012-02-22 15:44:12) [GET]
+  Parameters: {"action"=>"new", "controller"=>"holidays"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+Rendering template within layouts/application
+Rendering holidays/new
+ERROR: compiling _run_erb_app47views47holidays47_form46html46erb_locals_form_object RAISED compile error
+/Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/holidays/_form.html.erb:28: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47holidays47_form46html46erb_locals_form_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];form = local_assigns[:form];;@output_buffer = '';  __in_erb_template=true ;  form_for @holiday do |f| 
+@output_buffer.concat " "; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n"
+; if current_user.id != @holiday.user.id; @output_buffer.concat "\nYou cannot edit this page\r\n"
+
+;  end ; @output_buffer.concat "\n    <p> "
+; @output_buffer.concat(( f.label :"Date Leaving (YYYY/MM/DD)" ).to_s); @output_buffer.concat "<br />\r\n        "
+; @output_buffer.concat(( f.text_field :dateleaving ).to_s); @output_buffer.concat "\r\n    </p>\n <p> "
+
+; @output_buffer.concat(( f.label :"Date Returning (YYYY/MM/DD)" ).to_s); @output_buffer.concat "<br />\r\n        "
+; @output_buffer.concat(( f.text_field :datereturning ).to_s); @output_buffer.concat "\r\n    </p>\n  <p> "
+
+; @output_buffer.concat(( f.submit 'Save' ).to_s); @output_buffer.concat "</p>\n"
+;  end ; @output_buffer.concat "\n"
+;  if current_user.admin == true ; @output_buffer.concat "\n<p> "
+; @output_buffer.concat(( f.label :"Approved?" ).to_s); @output_buffer.concat "<br />\r\n        "
+; @output_buffer.concat(( f.check_box :approved ).to_s); @output_buffer.concat "\r\n    </p>\n<p> "
+
+; @output_buffer.concat(( f.label :"Declined?" ).to_s); @output_buffer.concat "<br />\r\n        "
+; @output_buffer.concat(( f.check_box :declined ).to_s); @output_buffer.concat "\r\n    </p>\n<p> "
+
+; @output_buffer.concat(( f.label :"Comments" ).to_s); @output_buffer.concat "<br />\r\n        "
+; @output_buffer.concat(( f.text_area :comments ).to_s); @output_buffer.concat "\n  <p> "
+; @output_buffer.concat(( f.submit 'Save' ).to_s); @output_buffer.concat "</p>\n"
+;  end ; @output_buffer.concat "\nYou cannot edit this page\r\n  "
+
+;  end ; @output_buffer.concat "\r\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/holidays/_form.html.erb:28:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable_partial.rb:20:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable_partial.rb:19:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/partials.rb:184:in `render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/base.rb:267:in `render'
+/Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/holidays/new.html.erb:14:in `_run_erb_app47views47holidays47new46html46erb'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:34:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:34:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/base.rb:306:in `with_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:30:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/base.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1252:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1328:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/flash.rb:151:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/routing/route_set.rb:438:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.11/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:47:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:41:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.11/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/handler/mongrel.rb:67:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/handler/mongrel.rb:38:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.11/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/holidays/_form.html.erb:28: syntax error, unexpected kENSURE, expecting $end) on line #28 of app/views/holidays/_form.html.erb:
+25: You cannot edit this page
+26:   <% end %>
+
+    app/views/holidays/_form.html.erb:28:in `compile!'
+    app/views/holidays/new.html.erb:14
+
+Rendered rescues/_trace (48.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HolidaysController#new (for 127.0.0.1 at 2012-02-22 15:44:45) [GET]
+  Parameters: {"action"=>"new", "controller"=>"holidays"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+Rendering template within layouts/application
+Rendering holidays/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/holidays/_form.html.erb:
+1: <% form_for @holiday do |f| -%>
+2:  <%= f.error_messages %>
+3: <%if current_user.id != @holiday.user.id%>
+4: You cannot edit this page
+5: <% end %>
+6:     <p> <%= f.label :"Date Leaving (YYYY/MM/DD)" %><br />
+
+    app/views/holidays/_form.html.erb:3
+    app/views/holidays/_form.html.erb:1
+    app/views/holidays/new.html.erb:14
+
+Rendered rescues/_trace (51.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HolidaysController#new (for 127.0.0.1 at 2012-02-22 15:44:54) [GET]
+  Parameters: {"action"=>"new", "controller"=>"holidays"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+Rendering template within layouts/application
+Rendering holidays/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/holidays/_form.html.erb:
+1: <% form_for @holiday do |f| -%>
+2:  <%= f.error_messages %>
+3: <%if current_user.id == @holiday.user.id%>
+4:     <p> <%= f.label :"Date Leaving (YYYY/MM/DD)" %><br />
+5:         <%= f.text_field :dateleaving %>
+6:     </p>
+
+    app/views/holidays/_form.html.erb:3
+    app/views/holidays/_form.html.erb:1
+    app/views/holidays/new.html.erb:14
+
+Rendered rescues/_trace (126.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2012-02-22 15:45:45) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2012-02-22 15:45:48) [POST]
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"H8MoNwHLwQaJtDyA5Bv0daCUP23M+It6hRV2O+43md0=", "controller"=>"sessions", "login"=>"Admin", "password"=>"[FILTERED]"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'Admin') LIMIT 1[0m
+Redirected to http://localhost:3000/holidays
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/sessions]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 15:45:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (2.9ms)[0m   [0mSELECT * FROM "holidays" [0m
+  [4;36;1mHoliday Load (0.7ms)[0m   [0;1mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 38ms (View: 25, DB: 5) | 200 OK [http://localhost/holidays]
+
+
+Processing HolidaysController#new (for 127.0.0.1 at 2012-02-22 15:45:51) [GET]
+  Parameters: {"action"=>"new", "controller"=>"holidays"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+Rendering template within layouts/application
+Rendering holidays/new
+ERROR: compiling _run_erb_app47views47holidays47_form46html46erb_locals_form_object RAISED compile error
+/Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/holidays/_form.html.erb:24: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47holidays47_form46html46erb_locals_form_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];form = local_assigns[:form];;@output_buffer = '';  __in_erb_template=true ;  form_for @holiday do |f| 
+@output_buffer.concat " "; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n    <p> "
+; @output_buffer.concat(( f.label :"Date Leaving (YYYY/MM/DD)" ).to_s); @output_buffer.concat "<br />\r\n        "
+; @output_buffer.concat(( f.text_field :dateleaving ).to_s); @output_buffer.concat "\r\n    </p>\n <p> "
+
+; @output_buffer.concat(( f.label :"Date Returning (YYYY/MM/DD)" ).to_s); @output_buffer.concat "<br />\r\n        "
+; @output_buffer.concat(( f.text_field :datereturning ).to_s); @output_buffer.concat "\r\n    </p>\n  <p> "
+
+; @output_buffer.concat(( f.submit 'Save' ).to_s); @output_buffer.concat "</p>\n"
+;  end ; @output_buffer.concat "\n"
+;  if current_user.admin == true ; @output_buffer.concat "\n<p> "
+; @output_buffer.concat(( f.label :"Approved?" ).to_s); @output_buffer.concat "<br />\r\n        "
+; @output_buffer.concat(( f.check_box :approved ).to_s); @output_buffer.concat "\r\n    </p>\n<p> "
+
+; @output_buffer.concat(( f.label :"Declined?" ).to_s); @output_buffer.concat "<br />\r\n        "
+; @output_buffer.concat(( f.check_box :declined ).to_s); @output_buffer.concat "\r\n    </p>\n<p> "
+
+; @output_buffer.concat(( f.label :"Comments" ).to_s); @output_buffer.concat "<br />\r\n        "
+; @output_buffer.concat(( f.text_area :comments ).to_s); @output_buffer.concat "\n  <p> "
+; @output_buffer.concat(( f.submit 'Save' ).to_s); @output_buffer.concat "</p>\n"
+;  end ; @output_buffer.concat "\n  "
+;  end ; @output_buffer.concat "\r\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/holidays/_form.html.erb:24:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable_partial.rb:20:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable_partial.rb:19:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/partials.rb:184:in `render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/base.rb:267:in `render'
+/Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/holidays/new.html.erb:14:in `_run_erb_app47views47holidays47new46html46erb'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:34:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:34:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/base.rb:306:in `with_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:30:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/base.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1252:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1328:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/flash.rb:151:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/routing/route_set.rb:438:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.11/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:47:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:41:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.11/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/handler/mongrel.rb:67:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/handler/mongrel.rb:38:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.11/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/holidays/_form.html.erb:24: syntax error, unexpected kENSURE, expecting $end) on line #24 of app/views/holidays/_form.html.erb:
+21: <% end %>
+22:   <% end %>
+
+    app/views/holidays/_form.html.erb:24:in `compile!'
+    app/views/holidays/new.html.erb:14
+
+Rendered rescues/_trace (48.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HolidaysController#new (for 127.0.0.1 at 2012-02-22 15:45:59) [GET]
+  Parameters: {"action"=>"new", "controller"=>"holidays"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+Rendering template within layouts/application
+Rendering holidays/new
+Rendered holidays/_form (8.4ms)
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 26ms (View: 15, DB: 0) | 200 OK [http://localhost/holidays/new]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 15:46:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (76.7ms)[0m   [0;1mSELECT * FROM "holidays" [0m
+  [4;35;1mHoliday Load (0.8ms)[0m   [0mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 111ms (View: 24, DB: 78) | 200 OK [http://localhost/holidays]
+
+
+Processing HolidaysController#show (for 127.0.0.1 at 2012-02-22 15:46:04) [GET]
+  Parameters: {"action"=>"show", "id"=>"76", "controller"=>"holidays"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mHoliday Load (0.2ms)[0m   [0;1mSELECT * FROM "holidays" WHERE ("holidays"."id" = 76) [0m
+Rendering template within layouts/application
+Rendering holidays/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 18ms (View: 8, DB: 0) | 200 OK [http://localhost/holidays/76]
+
+
+Processing HolidaysController#edit (for 127.0.0.1 at 2012-02-22 15:46:06) [GET]
+  Parameters: {"action"=>"edit", "id"=>"76", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (0.2ms)[0m   [0;1mSELECT * FROM "holidays" WHERE ("holidays"."id" = 76) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+Rendering template within layouts/application
+Rendering holidays/edit
+Rendered holidays/_form (6.2ms)
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 20ms (View: 9, DB: 0) | 200 OK [http://localhost/holidays/76/edit]
+
+
+Processing HolidaysController#update (for 127.0.0.1 at 2012-02-22 15:46:07) [PUT]
+  Parameters: {"commit"=>"Save", "action"=>"update", "_method"=>"put", "authenticity_token"=>"H8MoNwHLwQaJtDyA5Bv0daCUP23M+It6hRV2O+43md0=", "holiday"=>{"datereturning"=>"2012-09-26", "dateleaving"=>"2011-10-10"}, "id"=>"76", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (0.2ms)[0m   [0mSELECT * FROM "holidays" WHERE ("holidays"."id" = 76) [0m
+Redirected to http://localhost:3000/holidays/76
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/holidays/76]
+
+
+Processing HolidaysController#show (for 127.0.0.1 at 2012-02-22 15:46:07) [GET]
+  Parameters: {"action"=>"show", "id"=>"76", "controller"=>"holidays"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;35;1mHoliday Load (0.2ms)[0m   [0mSELECT * FROM "holidays" WHERE ("holidays"."id" = 76) [0m
+Rendering template within layouts/application
+Rendering holidays/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/holidays/76]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 15:46:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (2.9ms)[0m   [0mSELECT * FROM "holidays" [0m
+  [4;36;1mHoliday Load (0.8ms)[0m   [0;1mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 36ms (View: 23, DB: 4) | 200 OK [http://localhost/holidays]
