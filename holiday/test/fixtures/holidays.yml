@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  dateleaving: 2012-01-26
+  datereturning: 2012-01-26
+  approved: false
+  declined: false
+  comments: MyString
+
+two:
+  dateleaving: 2012-01-26
+  datereturning: 2012-01-26
+  approved: false
+  declined: false
+  comments: MyString

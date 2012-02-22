@@ -1,0 +1,16 @@
+<html>
+<body>
+<head>
+<%= stylesheet_link_tag 'SiteStyle'%>
+
+  <% if flash[:notice] %>
+  <div class = "flash"><%= flash[:notice] %></div>  
+  <% end %>
+  
+  <div id = "wrapper">
+  <%= yield %>
+  
+  <%= auto_discovery_link_tag :atom, formatted_holidays_path (:atom) %>
+  </div>
+  </body>
+  </html>
