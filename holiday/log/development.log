@@ -19598,3 +19598,552 @@ Rendering holidays/index
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
 DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/website/holiday/app/views/layouts/application.html.erb:13)
 Completed in 111ms (View: 25, DB: 76) | 200 OK [http://localhost/holidays]
+DEPRECATION WARNING: Kernel#returning has been deprecated in favor of Object#tap. (called from enable_activerecord at /Library/Ruby/Gems/1.8/gems/mislav-will_paginate-2.3.11/lib/will_paginate.rb:39)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2012-02-22 11:35:52) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-02-22 11:35:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+
+SyntaxError (/Users/ant-shimmin/Desktop/Assignment-3/holiday/app/controllers/holidays_controller.rb:60: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (99.4ms)
+Rendered rescues/_request_and_response (4.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-02-22 11:36:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+
+SyntaxError (/Users/ant-shimmin/Desktop/Assignment-3/holiday/app/controllers/holidays_controller.rb:61: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (31.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-02-22 11:36:13) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+
+SyntaxError (/Users/ant-shimmin/Desktop/Assignment-3/holiday/app/controllers/holidays_controller.rb:61: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (33.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-02-22 11:36:13) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+
+SyntaxError (/Users/ant-shimmin/Desktop/Assignment-3/holiday/app/controllers/holidays_controller.rb:61: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (106.1ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-02-22 11:36:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+
+SyntaxError (/Users/ant-shimmin/Desktop/Assignment-3/holiday/app/controllers/holidays_controller.rb:61: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (35.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 11:36:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (3.1ms)[0m   [0;1mSELECT * FROM "holidays" [0m
+  [4;35;1mHoliday Load (0.8ms)[0m   [0mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 78ms (View: 47, DB: 5) | 200 OK [http://localhost/holidays]
+
+
+Processing HolidaysController#show (for 127.0.0.1 at 2012-02-22 11:36:27) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"holidays"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+  [4;36;1mHoliday Load (0.2ms)[0m   [0;1mSELECT * FROM "holidays" WHERE ("holidays"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering holidays/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 22ms (View: 12, DB: 1) | 200 OK [http://localhost/holidays/1]
+
+
+Processing HolidaysController#edit (for 127.0.0.1 at 2012-02-22 11:36:30) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (0.2ms)[0m   [0;1mSELECT * FROM "holidays" WHERE ("holidays"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering holidays/edit
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+Rendered holidays/_form (14.8ms)
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 31ms (View: 26, DB: 0) | 200 OK [http://localhost/holidays/1/edit]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2012-02-22 11:36:39) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+Redirected to http://localhost:3000/
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2012-02-22 11:36:39) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2012-02-22 11:37:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 11:37:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (2.9ms)[0m   [0;1mSELECT * FROM "holidays" [0m
+  [4;35;1mHoliday Load (0.8ms)[0m   [0mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 39ms (View: 25, DB: 4) | 200 OK [http://localhost/holidays]
+
+
+Processing HolidaysController#show (for 127.0.0.1 at 2012-02-22 11:37:33) [GET]
+  Parameters: {"action"=>"show", "id"=>"77", "controller"=>"holidays"}
+Redirected to http://localhost:3000/login
+  [4;35;1mHoliday Load (0.2ms)[0m   [0mSELECT * FROM "holidays" WHERE ("holidays"."id" = 77) [0m
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/holidays/77]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2012-02-22 11:37:33) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 11:37:37) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (3.1ms)[0m   [0;1mSELECT * FROM "holidays" [0m
+  [4;35;1mHoliday Load (0.8ms)[0m   [0mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 39ms (View: 24, DB: 5) | 200 OK [http://localhost/holidays]
+
+
+Processing HolidaysController#show (for 127.0.0.1 at 2012-02-22 11:37:39) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"holidays"}
+Redirected to http://localhost:3000/login
+  [4;35;1mHoliday Load (0.2ms)[0m   [0mSELECT * FROM "holidays" WHERE ("holidays"."id" = 1) [0m
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/holidays/1]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2012-02-22 11:37:39) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 78ms (View: 76, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2012-02-22 11:37:42) [POST]
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"zaYl1F/qP3gan6OcpV6tJpzsuQoPS7PEtexCqGXE4BA=", "controller"=>"sessions", "login"=>"Admin", "password"=>"[FILTERED]"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'Admin') LIMIT 1[0m
+Redirected to http://localhost:3000/holidays
+Completed in 33ms (DB: 0) | 302 Found [http://localhost/sessions]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 11:37:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (3.0ms)[0m   [0mSELECT * FROM "holidays" [0m
+  [4;36;1mHoliday Load (0.8ms)[0m   [0;1mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 39ms (View: 25, DB: 5) | 200 OK [http://localhost/holidays]
+
+
+Processing HolidaysController#show (for 127.0.0.1 at 2012-02-22 11:37:44) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"holidays"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;35;1mHoliday Load (0.2ms)[0m   [0mSELECT * FROM "holidays" WHERE ("holidays"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering holidays/show
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 17ms (View: 6, DB: 1) | 200 OK [http://localhost/holidays/1]
+
+
+Processing HolidaysController#edit (for 127.0.0.1 at 2012-02-22 11:37:48) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"holidays"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mHoliday Load (0.2ms)[0m   [0;1mSELECT * FROM "holidays" WHERE ("holidays"."id" = 1) [0m
+
+NoMethodError (undefined method `user' for nil:NilClass):
+  app/controllers/holidays_controller.rb:24:in `edit'
+
+Rendered rescues/_trace (107.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#edit (for 127.0.0.1 at 2012-02-22 11:38:17) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"holidays"}
+
+SyntaxError (/Users/ant-shimmin/Desktop/Assignment-3/holiday/app/controllers/holidays_controller.rb:63: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (31.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#edit (for 127.0.0.1 at 2012-02-22 11:38:18) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"holidays"}
+
+SyntaxError (/Users/ant-shimmin/Desktop/Assignment-3/holiday/app/controllers/holidays_controller.rb:63: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (31.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HolidaysController#edit (for 127.0.0.1 at 2012-02-22 11:38:24) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"holidays"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mHoliday Load (0.2ms)[0m   [0;1mSELECT * FROM "holidays" WHERE ("holidays"."id" = 1) [0m
+
+NoMethodError (undefined method `user' for nil:NilClass):
+  app/controllers/holidays_controller.rb:24:in `edit'
+
+Rendered rescues/_trace (34.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HolidaysController#edit (for 127.0.0.1 at 2012-02-22 11:38:25) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"holidays"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mHoliday Load (0.2ms)[0m   [0;1mSELECT * FROM "holidays" WHERE ("holidays"."id" = 1) [0m
+
+NoMethodError (undefined method `user' for nil:NilClass):
+  app/controllers/holidays_controller.rb:24:in `edit'
+
+Rendered rescues/_trace (33.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HolidaysController#edit (for 127.0.0.1 at 2012-02-22 11:39:36) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (0.2ms)[0m   [0mSELECT * FROM "holidays" WHERE ("holidays"."id" = 1) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+Rendering template within layouts/application
+Rendering holidays/edit
+Rendered holidays/_form (8.6ms)
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 99ms (View: 11, DB: 1) | 200 OK [http://localhost/holidays/1/edit]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 11:39:40) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (2.9ms)[0m   [0;1mSELECT * FROM "holidays" [0m
+  [4;35;1mHoliday Load (0.8ms)[0m   [0mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 39ms (View: 25, DB: 5) | 200 OK [http://localhost/holidays]
+
+
+Processing HolidaysController#show (for 127.0.0.1 at 2012-02-22 11:39:41) [GET]
+  Parameters: {"action"=>"show", "id"=>"77", "controller"=>"holidays"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mHoliday Load (0.2ms)[0m   [0;1mSELECT * FROM "holidays" WHERE ("holidays"."id" = 77) [0m
+Rendering template within layouts/application
+Rendering holidays/show
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 16ms (View: 6, DB: 1) | 200 OK [http://localhost/holidays/77]
+
+
+Processing HolidaysController#edit (for 127.0.0.1 at 2012-02-22 11:39:45) [GET]
+  Parameters: {"action"=>"edit", "id"=>"77", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (0.4ms)[0m   [0;1mSELECT * FROM "holidays" WHERE ("holidays"."id" = 77) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+Rendering template within layouts/application
+Rendering holidays/edit
+Rendered holidays/_form (8.2ms)
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 24ms (View: 11, DB: 1) | 200 OK [http://localhost/holidays/77/edit]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 11:40:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (2.9ms)[0m   [0mSELECT * FROM "holidays" [0m
+  [4;36;1mHoliday Load (1.0ms)[0m   [0;1mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;35;1mSQL (69.7ms)[0m   [0mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 108ms (View: 24, DB: 74) | 200 OK [http://localhost/holidays]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 11:41:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (3.2ms)[0m   [0;1mSELECT * FROM "holidays" [0m
+  [4;35;1mHoliday Load (0.9ms)[0m   [0mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 41ms (View: 26, DB: 5) | 200 OK [http://localhost/holidays]
+
+
+Processing HolidaysController#show (for 127.0.0.1 at 2012-02-22 11:41:24) [GET]
+  Parameters: {"action"=>"show", "id"=>"76", "controller"=>"holidays"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mHoliday Load (0.2ms)[0m   [0;1mSELECT * FROM "holidays" WHERE ("holidays"."id" = 76) [0m
+Rendering template within layouts/application
+Rendering holidays/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/holidays/76]
+
+
+Processing HolidaysController#edit (for 127.0.0.1 at 2012-02-22 11:41:28) [GET]
+  Parameters: {"action"=>"edit", "id"=>"76", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (0.2ms)[0m   [0;1mSELECT * FROM "holidays" WHERE ("holidays"."id" = 76) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+Rendering template within layouts/application
+Rendering holidays/edit
+Rendered holidays/_form (7.9ms)
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 26ms (View: 14, DB: 0) | 200 OK [http://localhost/holidays/76/edit]
+
+
+Processing HolidaysController#show (for 127.0.0.1 at 2012-02-22 11:41:32) [GET]
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"holidays"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mHoliday Load (0.2ms)[0m   [0;1mSELECT * FROM "holidays" WHERE ("holidays"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering holidays/show
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 87ms (View: 6, DB: 1) | 200 OK [http://localhost/holidays/4]
+
+
+Processing HolidaysController#edit (for 127.0.0.1 at 2012-02-22 11:41:35) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (0.2ms)[0m   [0;1mSELECT * FROM "holidays" WHERE ("holidays"."id" = 4) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+Rendering template within layouts/application
+Rendering holidays/edit
+Rendered holidays/_form (5.0ms)
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 22ms (View: 8, DB: 1) | 200 OK [http://localhost/holidays/4/edit]
+
+
+Processing HolidaysController#edit (for 127.0.0.1 at 2012-02-22 11:41:59) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (0.2ms)[0m   [0mSELECT * FROM "holidays" WHERE ("holidays"."id" = 4) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+Rendering template within layouts/application
+Rendering holidays/edit
+Rendered holidays/_form (5.2ms)
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/holidays/4/edit]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 11:42:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (2.9ms)[0m   [0;1mSELECT * FROM "holidays" [0m
+  [4;35;1mHoliday Load (0.8ms)[0m   [0mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 39ms (View: 25, DB: 4) | 200 OK [http://localhost/holidays]
+
+
+Processing HolidaysController#show (for 127.0.0.1 at 2012-02-22 11:42:13) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"holidays"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mHoliday Load (0.2ms)[0m   [0;1mSELECT * FROM "holidays" WHERE ("holidays"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering holidays/show
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 85ms (View: 6, DB: 1) | 200 OK [http://localhost/holidays/1]
+
+
+Processing HolidaysController#edit (for 127.0.0.1 at 2012-02-22 11:42:16) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (0.2ms)[0m   [0;1mSELECT * FROM "holidays" WHERE ("holidays"."id" = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+Rendering template within layouts/application
+Rendering holidays/edit
+Rendered holidays/_form (5.2ms)
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 26ms (View: 12, DB: 1) | 200 OK [http://localhost/holidays/1/edit]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-02-22 11:42:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (2.9ms)[0m   [0mSELECT * FROM "holidays" [0m
+  [4;36;1mHoliday Load (0.8ms)[0m   [0;1mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 47) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 46) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 35) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 37ms (View: 24, DB: 4) | 200 OK [http://localhost/holidays]
+
+
+Processing HolidaysController#index to atom (for 127.0.0.1 at 2012-02-22 11:42:27) [GET]
+  Parameters: {"format"=>"atom", "action"=>"index", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (2.9ms)[0m   [0;1mSELECT * FROM "holidays" [0m
+  [4;35;1mHoliday Load (0.7ms)[0m   [0mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering holidays/index
+Completed in 188ms (View: 176, DB: 4) | 200 OK [http://localhost/holidays.atom]
