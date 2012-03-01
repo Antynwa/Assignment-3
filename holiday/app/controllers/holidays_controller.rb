@@ -20,9 +20,8 @@ login_required
 
   def edit
   @holiday= Holiday.find(params[:id])
-if current_user.id != @holiday.user.id || if current_user.admin == false
-    redirect_to @holiday
-end
+ if current_user.id != @holiday.user.id
+    redirect_to holidays_path
 end
   end
 
