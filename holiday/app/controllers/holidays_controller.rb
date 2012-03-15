@@ -2,7 +2,8 @@ class HolidaysController < ApplicationController
   def index
 @holiday = Holiday.all
 respond_to do |format|
-format.html # Send the page using HTMLformat.xml { render :xml => @holidays } # Send the page using XML
+format.html # Send the page using HTML
+format.xml { render :xml => @holidays } # Send the page using XML
 format.atom
 @holidays = Holiday.paginate :page => params[:page], :per_page => '12', :order => 'created_at DESC'
 end
@@ -33,7 +34,7 @@ if@holiday.save
     	redirect_to @holiday
 else
 	flash[:error] = "Was not Updated!!"
-  	redirect_to :action => "edit_holiday_path"
+    	redirect_to :action => "edit_holiday_path"
 end
 
 end

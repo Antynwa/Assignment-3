@@ -24,6 +24,8 @@
 <p><%=h @holiday.declined %><p>
 <h3>Comments</h3>
 <p><%=h @holiday.comments %><p>
+<%= image_tag @holiday.photo.url(:small) %>
+
 <% if current_user.id == @holiday.user.id || current_user.admin == true %>
 <%= link_to 'Edit or Approve Holiday', edit_holiday_path %> | <%= 
 link_to 'Back', holidays_path %> |
