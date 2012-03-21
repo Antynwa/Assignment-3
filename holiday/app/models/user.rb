@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
 has_many :holidays
+has_many :posts
   # new columns need to be added here to be writable through mass assignment
   attr_accessible :username, :email, :password, :password_confirmation, :admin, :fname, :sname
 

@@ -42,7 +42,6 @@ end
   def create
     @holiday = Holiday.create(params[:holiday])
     @holiday.user_id = current_user.id
-
 if@holiday.save
   	@holiday.update_attributes(params[:holiday])
         flash[:notice] = " New Holiday Created!"

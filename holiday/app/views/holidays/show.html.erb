@@ -25,12 +25,13 @@
 <h3>Comments</h3>
 <p><%=h @holiday.comments %><p>
 	<h3>Holiday Photo</h3>
-	<% if @holiday.photo.file? %>
-	  <%= image_tag @holiday.photo.url(:small) %>
-	<% else %>
-	  No Photo available!
-	<% end %>
-	<h3>___________</h3>
+		<% if @holiday.photo.file? %>
+		  <%= image_tag @holiday.photo.url(:small) %>
+		<% else %>
+		  No Photo available!
+		<% end %>
+		<h3>___________</h3>
+
 <% if current_user.id == @holiday.user.id || current_user.admin == true %>
 <%= link_to 'Edit or Approve Holiday', edit_holiday_path %> | <%= 
 link_to 'Back', holidays_path %> |
