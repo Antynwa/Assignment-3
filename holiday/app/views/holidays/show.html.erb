@@ -2,35 +2,77 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title><%=h @holiday.user.fname %>'s Holiday Request</title>
+<title><%=h @holiday.user.username %> Holiday Request</title>
 </head>
 <body>
-<div id="wrap">
-  <div id="header"><h1><img name="ljmuheader" src="http://img850.imageshack.us/img850/5711/headerogd.jpg" width="800" height="100" alt="LJMU Holiday Booking System" title="LJMU Holiday Booking System"></h1>
-</div>
-<div id="main">
-<h1>Holiday Requests</h1>
-<h3>First Name</h3>
-<%=h @holiday.user.fname %><p>
-<h3>SecondName</h3>
-<%=h @holiday.user.sname %><p>
-<h3>Date Leaving</h3>
-<p><%=h @holiday.dateleaving %><p>
-<h3>Date Returning</h3>
-<p><%=h @holiday.datereturning %><p>
-<h3>Approved</h3>
-<p><%=h @holiday.approved %><p>
-<h3>Declined</h3>
-<p><%=h @holiday.declined %><p>
-<h3>Comments</h3>
-<p><%=h @holiday.comments %><p>
-	<h3>Holiday Photo</h3>
+	<div id="wrapper">
+
+	   <div id="header">
+	   <h3>Liverpool John Moores University</h3>
+	   <h5>Holiday Requests</h5>
+	   </div>
+	   <div id="navigation" >
+
+
+
+	     <p><%= link_to "| Log in", login_path %>| <%= link_to "| Log Out ", logout_path %> |<%= link_to "| Requests", holidays_path %>|<%= link_to "| New Holiday", new_holiday_path 
+		%> |<%= link_to "| Posts |", posts_path 
+			%>|</p>
+	</div>
+			 <div id="content">
+				<p	</p>
+				
+					<table width="500" border="1" align="center" class="gridtable">
+				
+					 <tr id="table2">
+
+				      <th height="26" scope="col">Username</th>
+				      <th scope="col">First Name</th>
+				      <th scope="col">Second Name</th>
+				      <th scope="col">Date Leaving</th>
+				      <th scope="col">Date Returning</th>
+				      <th scope="col">Approved</th>
+				      <th scope="col">Rejected</th>
+				      <th scope="col">Comments</th>
+				
+				
+				
+				
+
+
+				    </tr>
+				<tr>
+				
+						<td><%=h @holiday.user.username %></td>
+					  <td><%=h @holiday.user.fname %></td>
+					  <td><%=h @holiday.user.sname %></td>
+					  <td><%=h @holiday.dateleaving %></td>
+					  <td><%=h @holiday.datereturning %></td>
+						<% if @holiday.approved? %>
+						<% else %>
+						<td>This Holiday Request has not been checked</td>
+					  <% end %>
+						<% if @holiday.approved == true %>
+						<td>Your Request has been approved!</td>
+							<% end %>
+							<% if @holiday.declined? %>
+								<% else %>
+								  <td>This Holiday Request has not been checked</td>
+								<% end %>
+								<% if @holiday.declined == true %>
+								<td>Your Request has been DECLINED!</td>
+									<% end %>
+					  <td><%=h @holiday.comments %></td>
+					
+					</tr>
+					</table>
+	<h5>Holiday Photo</h5>
 		<% if @holiday.photo.file? %>
 		  <%= image_tag @holiday.photo.url(:small) %>
 		<% else %>
-		  No Photo available!
+		  <p>No Photo available!</p>
 		<% end %>
-		<h3>___________</h3>
+		<h5>___________</h5>
 
 <% if current_user.id == @holiday.user.id || current_user.admin == true %>
 <%= link_to 'Edit or Approve Holiday', edit_holiday_path %> | <%= 
@@ -38,37 +80,17 @@ link_to 'Back', holidays_path %> |
 <%= link_to 'Delete this Holiday Request', @holiday, :confirm => "Are 
 you sure?", :method => :delete %>
 <% end %>
-<%= 
-link_to 'Back', holidays_path %>
+ </div>
 </div>
-<div id="navbar">
-  <p>__________</p>
-  <p><%= link_to "Log in", login_path %></p>
-  <p>__________</p>
-  <p><%= link_to "Log Out ", logout_path %></p>
-  <p>__________</p>
-  <p><%= link_to "Requests", holidays_path %></p>
-  <p>__________ </p>
-  <p><%= link_to "New Holiday", new_holiday_path 
-%></p>
- <p>__________ </p>
-  <div id="widget">
-    <p><a href="mailto:a.shimmin@2009.ljmu.ac.uk" title="Mail Antony Shimmin">Copyright Antony Shimmin</a></p>
-    <p><a href="http://jigsaw.w3.org/css-"><img
-            src="http://jigsaw.w3.org/css-validator/images/vcss"
-            alt="Valid CSS!" border="0" style="border:0;width:88px;height:31px" title="Valid CSS!"></a></p>
-    <p> <img
-      src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Transitional" width="88" height="31" border="0" title="Valid HTML 4.01!"></p>
-    <p><a href="http://www.facebook.com/liverpooljohnmooresuniversity"><img src="http://ibcnn.org/files/facebook-icon.gif" alt="Facebook LJMU" name="Facebook" width="52" height="52" border="0" title="LJMU Facebook"></a></p>
-    <p><a href="http://twitter.com/#!/liverpooljmu"><img src="http://ardenreimer.com/wp-content/uploads/2011/05/twitter-icon.gif" alt="LJMU Twitter" width="52" height="52" border="0" title="LJMU Twitter" longdesc="http://twitter.com/#!/liverpooljmu"></a></p>
-  </div>
-</div>
-<div id="footer">
-<p>&nbsp;</p>
-</div>
-</div>
+
+
+
 </body>
+
 </html>
+
+
+
 
 
 

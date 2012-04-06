@@ -3,7 +3,7 @@ atom_feed do |feed|
   feed.updated(@holiday.first.created_at)
   @holiday.each do |holiday|
     feed.entry(holiday) do |entry|
-      entry.title(holiday.dateleaving)
+      entry.title(holiday.user.fname)
       entry.content(holiday.datereturning)
     end
   end

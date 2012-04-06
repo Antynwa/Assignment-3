@@ -1,23 +1,25 @@
 <% form_for @holiday, :html => { :multipart => true } do |f| -%>
  <%= f.error_messages %>
     <p> <%= f.label :"Date Leaving (YYYY/MM/DD)" %><br />
-        <%= f.text_field :dateleaving %>
+        <%= f.datetime_select :dateleaving %>
     </p>
  <p> <%= f.label :"Date Returning (YYYY/MM/DD)" %><br />
-        <%= f.text_field :datereturning %>
+        <%= f.datetime_select :datereturning %>
     </p>
   <%= f.file_field :photo %>
-  <p> <%= f.submit 'Save' %></p>
-<% end %>
-<% if current_user.admin == true %>
-<p> <%= f.label :"Approved?" %><br />
-        <%= f.check_box :approved %>
-    </p>
+<p>
+ 	<% if current_user.admin == true %>
+	<p>
+	  <%= f.label :approved, "Approved?" %><br />
+	  <%= f	.check_box :approved %>
+	</p>
+</p>
 <p> <%= f.label :"Declined?" %><br />
         <%= f.check_box :declined %>
     </p>
 <p> <%= f.label :"Comments" %><br />
         <%= f.text_area :comments %>
-
-  <p> <%= f.submit 'Save' %></p>
-<% end %>
+				<% end %>
+	
+	  <p> <%= f.submit 'Edit/Submit Request' %></p>
+	<% end %>

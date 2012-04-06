@@ -1,12 +1,21 @@
 # password: "secret"
 foo:
+  id: 1
   username: foo
   email: foo@example.com
+  fname: bar
+  sname: foo
   password_hash: "$2a$10$tUpEtZKDRfgosDmX2cUIFeCvHAHn9VT/0ZvmUhXiZCxSIrSdRiLhu"
   password_salt: "$2a$10$tUpEtZKDRfgosDmX2cUIFe"
 
 bar:
+  id: 2
   username: bar
   email: bar@example.com
+  fname: foo
+  sname: bar
   password_hash: "$2a$10$tUpEtZKDRfgosDmX2cUIFeCvHAHn9VT/0ZvmUhXiZCxSIrSdRiLhu"
   password_salt: "$2a$10$tUpEtZKDRfgosDmX2cUIFe"
+  admin: true
+  
+  

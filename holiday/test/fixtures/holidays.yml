@@ -5,11 +5,24 @@ one:
   datereturning: 2012-01-26
   approved: false
   declined: false
-  comments: MyString
-
+  comments: MyString 
+  id: 20
+  user_id: 10
+  
 two:
+  id: 10
   dateleaving: 2012-01-26
   datereturning: 2012-01-26
-  approved: false
+  approved: true
   declined: false
   comments: MyString
+  user_id: 25
+  
+three:
+    id: 15
+    dateleaving: 2012-01-26
+    datereturning: 2012-01-26
+    approved: false
+    declined: false
+    comments: Never
+    user_id: 2

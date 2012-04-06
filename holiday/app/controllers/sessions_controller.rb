@@ -1,6 +1,4 @@
 class SessionsController < ApplicationController
-  def new
-  end
 
   def create
     user = User.authenticate(params[:login], params[:password])
@@ -9,7 +7,7 @@ class SessionsController < ApplicationController
       flash[:notice] = "Logged in successfully."
       redirect_to holidays_path
     else
-      flash.now[:notice] = "Invalid login or password."
+      flash.now[:s] = "Invalid login or password."
       render :action => 'new'
     end
   end

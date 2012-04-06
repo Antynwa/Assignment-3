@@ -1,3 +1,6 @@
+* { padding: 0; margin: 0; }
+
+
 #flash_notice, #flash_error {
   padding: 5px 8px;
 }
@@ -50,68 +53,115 @@
   list-style: disc;
 }
 
-
 body {
-	background:#D0DC66;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 36px;
 }
-#wrap {
-	width:800px;
-	margin:0 auto;
-	background:#D0DC66;
+
+p {
+	padding: 10px;
+	font-size: 12px;
+	color: #000;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 100%;
+	font-size: 24px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	position:relative;
+}
+
+#content { 
+ float: left;
+ color: #333;
+ background: #FFFFFF;
+ height: 350px;
+ width: 100%;
+ display: inline;
+ text-align:center;
 }
 
 #header {
-	background:#ddd;
-}
-
-#main {
-	float:right;
-	width:577px;
-	background:#D0DC66;
-	font-family: Tahoma, Geneva, sans-serif;
-	text-align:center;
-}
-
-table {
-	font-size: 11px;
-	font-weight: bold;
-	text-align: left;
-		
-}
-
-#navbar {
-	float:left;
-	width:223px;
-	color: #D0DC66;
-	background-color: #1B3069;
-	font-family: Tahoma, Geneva, sans-serif;
-	text-align: center;
+ color: #333;
+ width: 100%;
+ float: left;
+ height: 100px;
+ background: #FFFF99;
+ font-size:36px;
 }
 
 #footer {
-	clear:both;
-	background:#D0DC66;
+	width: 100%;
+	height: 75px;
+	clear: both;
+	color: #333;
+	background: #899cbf;
+	left: auto;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	position:relative;
 }
 
-a:link {
+#navigation {
+ float: left;
+ width: 100%;
+ height: 50px;
+ color: #333;
+ background: #13387e;
+}
+#navigation a:link {
 	text-decoration: none;
-	color: #FF0000;
+	color: #FFFF99;
+	font-size: 24px;
 }
-
-a:visited {
-	color:#FF0000;
+#navigation a:visited {
+	color:#FFFF99;
 	text-decoration:none;
 }
+#content a:link { 
+ color: #13387e;
+text-decoration:underline;
 
-a:hover {
-	text-decoration: none;
-	color: #FFF;
-	font-weight:bold;
-	font-family: Tahoma, Geneva, sans-serif;
+
+ 
 }
-table {
-	font-weight: normal;
+#content a:visited {
+	color:#13387e;
+	text-decoration:underline;
 }
+table.gridtable {
+	font-family: verdana,arial,sans-serif;
+	font-size:17px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+	text-align:center;
+	vertical-align:middle;
+	width:1000;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+	text-align:center;
+}
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+	text-align:center;
+		}
+
 .flash
 {
 	color: #008000;

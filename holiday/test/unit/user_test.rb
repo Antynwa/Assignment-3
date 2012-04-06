@@ -4,8 +4,11 @@ class UserTest < ActiveSupport::TestCase
   def new_user(attributes = {})
     attributes[:username] ||= 'foo'
     attributes[:email] ||= 'foo@example.com'
+    attributes[:fname] ||= 'Neil'
+    attributes[:sname] ||= 'Lennon'
     attributes[:password] ||= 'abc123'
     attributes[:password_confirmation] ||= attributes[:password]
+    attributes[:admin] ||= true
     user = User.new(attributes)
     user.valid? # run validations
     user
@@ -48,6 +51,12 @@ class UserTest < ActiveSupport::TestCase
   def test_validate_password_length
     assert new_user(:password => 'bad').errors.on(:password)
   end
+  def test_fname_contents
+    assert new_user(:fname => '').errors.on(:fname)
+  end
+  def test_sname_contents
+     assert new_user(:sname => '').errors.on(:sname)
+   end
 
   def test_require_matching_password_confirmation
     assert new_user(:password_confirmation => 'nonmatching').errors.on(:password)

@@ -1,14 +1,28 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<title>LJMU HBS Holiday Requests</title>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>LJMU Log in!</title>
+<title>LJMU Holiday Requests</title>
 </head>
 <body>
-<div id="wrap">
-  <div id="header"><h1><img name="ljmuheader" src="http://img850.imageshack.us/img850/5711/headerogd.jpg" width="800" height="100" alt="LJMU Holiday Booking System" title="LJMU Holiday Booking System"></h1>
-</div>
-<div id="main">
+	<div id="wrapper">
+
+	   <div id="header">
+	   <h3>Liverpool John Moores University</h3>
+	   <h4>Holiday Requests</h4>
+	   </div>
+	   <div id="navigation" >
+
+
+
+	     <p><%= link_to "| Log in", login_path %>| <%= link_to "| Log Out ", logout_path %> |<%= link_to "| Requests", holidays_path %>|<%= link_to "| New Holiday", new_holiday_path 
+		%> |<%= link_to "| Posts |", posts_path 
+			%>|</p>
+	</div>
+
+			 <div id="content">
+
 <p>Don't have an account? <%= link_to "Sign up!", signup_path %></p>
 
 <% form_tag sessions_path do %>
@@ -22,33 +36,12 @@
   </p>
   <p><%= submit_tag "Log in" %></p>
 <% end %>
+	 </div>
 </div>
-<div id="navbar">
-     <p>__________</p>
-  <p><%= link_to "Log in", login_path %></p>
-  <p>__________</p>
-  <p><%= link_to "Log Out ", logout_path %></p>
-  <p>__________</p>
-  <p><%= link_to "Requests", holidays_path %></p>
-  <p>__________ </p>
-  <p><%= link_to "New Holiday", new_holiday_path 
-%></p>
- <p>__________ </p>
-  <div id="widget">
-    <p><a href="mailto:a.shimmin@2009.ljmu.ac.uk" title="Mail Antony Shimmin">Copyright Antony Shimmin</a></p>
-    <p><a href="http://jigsaw.w3.org/css-"><img
-            src="http://jigsaw.w3.org/css-validator/images/vcss"
-            alt="Valid CSS!" border="0" style="border:0;width:88px;height:31px" title="Valid CSS!"></a></p>
-    <p> <img
-      src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Transitional" width="88" height="31" border="0" title="Valid HTML 4.01!"></p>
-    <p><a href="http://www.facebook.com/liverpooljohnmooresuniversity"><img src="http://ibcnn.org/files/facebook-icon.gif" alt="Facebook LJMU" name="Facebook" width="52" height="52" border="0" title="LJMU Facebook"></a></p>
-    <p><a href="http://twitter.com/#!/liverpooljmu"><img src="http://ardenreimer.com/wp-content/uploads/2011/05/twitter-icon.gif" alt="LJMU Twitter" width="52" height="52" border="0" title="LJMU Twitter" longdesc="http://twitter.com/#!/liverpooljmu"></a></p>
-  </div>
-</div>
-<div id="footer">
-<p>&nbsp;</p>
-</div>
-</div>
+
+
+
 </body>
+
 </html>
 

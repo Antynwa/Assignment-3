@@ -1,4 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<title>LJMU HBS Holiday Requests</title>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>LJMU Holiday Requests</title>
+</head>
+<body>
+	<div id="wrapper">
+
+	   <div id="header">
+	   <h3>Liverpool John Moores University</h3>
+	   <h4>Holiday Requests</h4>
+	   </div>
+	   <div id="navigation" >
+
+
+
+	     <p><%= link_to "| Log in", login_path %>| <%= link_to "| Log Out ", logout_path %> |<%= link_to "| Requests", holidays_path %>|<%= link_to "| New Holiday", new_holiday_path 
+		%> |<%= link_to "| Posts |", posts_path 
+			%>|</p>
+	</div>
+
+			 <div id="content">
+
+
+
 <%= render :partial => "message_form" %>  
 <b><div id="posts"></b>  
   <%= render :partial => @posts %>  
 <b></div></b>
+
+		 </div>
+	</div>
+
+
+
+
+</body>
+
+</html>
