@@ -1,4 +1,4 @@
-require 'test_helper'
+require File.dirname(__FILE__) + "/../test_helper"
 
 class HolidaysControllerTest < ActionController::TestCase
   # Replace this with your real tests.
@@ -7,11 +7,21 @@ class HolidaysControllerTest < ActionController::TestCase
     assert_select 'form p', :count => 0
     # #This is true because there is no user logged in
   end
-  def test_should_create_holiday
-    post :create, :holiday => { :dateleaving => '02/02/2012',
-    :datereturning => '03/02/2012', :user_id => '1'}
-    assert_redirected_to holiday_path(assigns(:holiday))
-    assert_equal 'New Holiday Required', flash[:notice]
+  def test_should_show
+    get :show, :id => 10 
+    assert_template ""
+  end
+  def test_should_edit
+    get :update, :id => 10 
+    assert_equal 'Holiday updated!', flash[:notice]  
+    end
+  def test_should_destroy
+    get :destroy, :id => 10
+    assert_equal nil , flash[:notice]
+  def test_should_create
+      get :create, :id => 10
+      assert_equal " New Holiday Created!", flash[:notice]
     end
   end
+end
   

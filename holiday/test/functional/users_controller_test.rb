@@ -1,8 +1,8 @@
-require 'test_helper'
+require File.dirname(__FILE__) + "/../test_helper"
 
 class UsersControllerTest < ActionController::TestCase
-  def test_create
-    get :create
-    assert_select 'form p',:count => 8
+  def test_user_create
+    get :create, :id => 10
+    assert_equal nil, flash[:notice]  
   end
 end

@@ -21,33 +21,28 @@
 	</div>
 
 			 <div id="content">
+			           <table width="500" border="1" align="center" class="gridtable" id="meh">
+			    <tr id="">
+
+			      <th height="26" scope="col">Username</th>
+			      <th scope="col">Date Leaving</th>
+			      <th scope="col">Date Submitted</th>
+			      <th scope="col">Approved</th>
+			      <th scope="col">Date Updated</th>
 
 
-
-						   <p style="a:link =">sdsd</p>
-				           <table width="500" border="1" align="center" class="gridtable">
-				    <tr id="table2">
-
-				      <th height="26" scope="col">Username</th>
-				      <th scope="col">Date Leaving</th>
-				      <th scope="col">Date Submitted</th>
-				      <th scope="col">Approved</th>
-				      <th scope="col">Date Updated</th>
-
-
-				    </tr>
-				    <% for holiday in @holidays%>
-
+			    </tr>
+			    <% @holiday.each do |holiday| %>
 				<tr>
 
 				  <td><%= link_to holiday.user.username, holiday %></td>
-				  <td><%=h holiday.dateleaving%></td>
-				  <td><%=h holiday.created_at%></td>
-				  <td><%=h holiday.approved%></td>
-				  <td><%=h holiday.updated_at%></td>
+				  <td><%= holiday.dateleaving%></td>
+				  <td><%= time_ago_in_words(holiday.created_at)%></td>
+				  <td><%= holiday.approved%></td>
+				  <td><%= time_ago_in_words(holiday.updated_at)%></td>
 				</tr>
 				<% end %>
-				<%= will_paginate @holidays, :remote => {:with => 'value', :update => 'some_div'} %>
+				<%= will_paginate @holidays, :renderer => "RemoteLinkRenderer",:remote => {:update => "content"}	 %>					  
 
 				</table>
 						   

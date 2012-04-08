@@ -7,6 +7,7 @@ foo:
   sname: foo
   password_hash: "$2a$10$tUpEtZKDRfgosDmX2cUIFeCvHAHn9VT/0ZvmUhXiZCxSIrSdRiLhu"
   password_salt: "$2a$10$tUpEtZKDRfgosDmX2cUIFe"
+  admin: false
 
 bar:
   id: 2

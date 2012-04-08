@@ -1,4 +1,4 @@
-require 'test_helper'
+require File.dirname(__FILE__) + "/../test_helper"
 
 class UserTest < ActiveSupport::TestCase
   def new_user(attributes = {})
@@ -91,5 +91,18 @@ class UserTest < ActiveSupport::TestCase
     User.delete_all
     new_user(:username => 'foobar', :password => 'secret').save!
     assert_nil User.authenticate('foobar', 'badpassword')
+  end
+  
+  def another_user_should_be_admin
+    assert new_user(:admin => true).errors.on(:admin)
+  
+  end
+  
+  def user_should_be_admin
+    assert_equal true, users(:bar).admin
+  end
+  
+  def user_should_not_be_admin
+    assert_equal false, users(:foo).admin
   end
 end
