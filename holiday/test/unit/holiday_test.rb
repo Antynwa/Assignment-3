@@ -1,8 +1,8 @@
-require File.dirname(__FILE__) + "/../test_helper"
+require 'test_helper'
 
 class HolidayTest < ActiveSupport::TestCase
   # Replace this with your real tests.
-  def test_holiday(attributes = {})
+  def new_holiday(attributes = {})
      attributes[:dateleaving] ||= '10/10/2012'
      attributes[:daterturning] ||= '09/09/2012'
      attributes[:user_id] ||= 5
@@ -22,5 +22,13 @@ class HolidayTest < ActiveSupport::TestCase
     def test_holiday_should_have_comments
       assert_match 'MyString', holidays(:one).comments
     end
+    def dateleaving_must_not_be_blank
+      assert new_holiday(:dateleaving => '').errors.on(:dateleaving)
+    end
+     def datereturning
+        assert new_holiday(:datereturning => '').errors.on(:datereturning)
+      end
+    
+    
 end
 

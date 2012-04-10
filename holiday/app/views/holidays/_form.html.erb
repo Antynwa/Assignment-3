@@ -1,38 +1,25 @@
 <% form_for @holiday, :html => { :multipart => true } do |f| -%>
  <%= f.error_messages %>
-
-	
-		<table width="500" border="1" align="center" class="gridtable">
-	
-		 <tr id="table2">
-
-	      <th height="26" scope="col">Date Leaving</th>
-	      <th scope="col">Date Returning</th>
-				<th scope="col">Picture</th>
-				<% if current_user.admin == true %>
-	      <th scope="col">Approved</th>
-	      <th scope="col">Rejected</th>
-	      <th scope="col">Comments</th>
+    <p> <%= f.label :"Date Leaving (YYYY/MM/DD)" %><br />
+        <%= f.datetime_select :dateleaving %>
+    </p>
+ <p> <%= f.label :"Date Returning (YYYY/MM/DD)" %><br />
+        <%= f.datetime_select :datereturning %>
+    </p>
+  <%= f.file_field :photo %>
+<p>
+ 	<% if current_user.admin == true %>
+	<p>
+	  <%= f.label :approved, "Approved?" %><br />
+	  <%= f	.check_box :approved %>
+	</p>
+</p>
+<p> <%= f.label :"Declined?" %><br />
+        <%= f.check_box :declined %>
+    </p>
+<p> <%= f.label :"Comments" %><br />
+        <%= f.text_area :comments %>
 				<% end %>
-				<th scope="col">Submit</th>
 	
-	
-	
-	
-
-
-	    </tr>
-	<tr>
-	
-			<td><%= f.date_select :dateleaving %></td>
-		  <td><%= f.date_select :datereturning %></td>
-		  <td><%= f.file_field :photo %></td>
-		 	<% if current_user.admin == true %>
-		  <td><%= f	.check_box :approved %></td>
-		  <td><%= f.check_box :declined %></td>
-		  <td><%= f.text_area :comments %></td>
-			<% end %>
-			<td><%= f.submit 'Edit/Submit Request' %></td>
-			<% end %>
-		</tr>
-		</table>
+	  <p> <%= f.submit 'Edit/Submit Request' %></p>
+	<% end %>

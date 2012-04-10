@@ -1,10 +1,9 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+<body>
 <head>
 <%= javascript_include_tag :all %> 
 <%= stylesheet_link_tag 'SiteStyle'%>
 </head>
-<body>
   <% if flash[:notice] %>
   <div class = "flash"><%= flash[:notice] %>
   <% end %>
@@ -12,6 +11,6 @@
   <div id = "wrapper">
   <%= yield %>
   <%= auto_discovery_link_tag :atom, formatted_holidays_path(:atom) %>
-</div>
-</body>
-</html>
+  </div>
+  </body>
+  </html>

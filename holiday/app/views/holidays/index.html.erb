@@ -20,7 +20,7 @@
 			%>|</p>
 	</div>
 
-			 <div id="content">
+			 <div id="content">				
 			           <table width="500" border="1" align="center" class="gridtable" id="meh">
 			    <tr id="">
 
@@ -32,7 +32,7 @@
 
 
 			    </tr>
-			    <% @holiday.each do |holiday| %>
+					<% for holiday in @holidays%>
 				<tr>
 
 				  <td><%= link_to holiday.user.username, holiday %></td>
@@ -42,11 +42,13 @@
 				  <td><%= time_ago_in_words(holiday.updated_at)%></td>
 				</tr>
 				<% end %>
-				<%= will_paginate @holidays, :renderer => "RemoteLinkRenderer",:remote => {:update => "content"}	 %>					  
+									 </div>
 
-				</table>
-						   
-						 </div>
+			</table>
+<h3> Standard Pagination </h3>
+				<%= will_paginate @holidays %>	
+<h3> Ajax Pagination </h3>	   
+	<%= will_paginate @holidays, :renderer => 'RemoteLinkRenderer' , :remote => {:update => "wrapper"} %>
 					</div>
 
 

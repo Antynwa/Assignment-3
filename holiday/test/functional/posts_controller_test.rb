@@ -1,6 +1,5 @@
-require File.dirname(__FILE__) + "/../test_helper"
+require 'test_helper'
 
 class PostsControllerTest < ActionController::TestCase
-  def test_post_form_count
-  end
+  # Replace this with your real tests.
 end

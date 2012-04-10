@@ -7,7 +7,7 @@ class PostsController < ApplicationController
   end  
   
   def create
-    @post = Post.create(:message => params[:post])
+    @post = Post.create(:message => params[:message])
     @post.user_id = current_user.id
     respond_to do |format|  
       if @post.save  
