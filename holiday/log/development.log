@@ -44633,3 +44633,425 @@ DEPRECATION WARNING: Kernel#returning has been deprecated in favor of Object#tap
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+DEPRECATION WARNING: Kernel#returning has been deprecated in favor of Object#tap. (called from enable_activerecord at /Library/Ruby/Gems/1.8/gems/mislav-will_paginate-2.3.11/lib/will_paginate.rb:39)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+DEPRECATION WARNING: Kernel#returning has been deprecated in favor of Object#tap. (called from enable_activerecord at /Library/Ruby/Gems/1.8/gems/mislav-will_paginate-2.3.11/lib/will_paginate.rb:39)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHolidays (20120126231728)
+Migrating to CreateUsers (20120126235152)
+Migrating to AddFnameToUsers (20120127000008)
+Migrating to AddSnameToUsers (20120127000108)
+Migrating to AddAdminToUsers (20120127000136)
+Migrating to AddUserIdToHoliday (20120127093906)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: duplicate column name: user_id: ALTER TABLE "holidays" ADD "user_id" integer[0m
+DEPRECATION WARNING: Kernel#returning has been deprecated in favor of Object#tap. (called from enable_activerecord at /Library/Ruby/Gems/1.8/gems/mislav-will_paginate-2.3.11/lib/will_paginate.rb:39)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateHolidays (20120126231728)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "holidays" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "dateleaving" date, "datereturning" date, "approved" boolean, "declined" boolean, "comments" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120126231728')[0m
+Migrating to CreateUsers (20120126235152)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "password_hash" varchar(255), "password_salt" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120126235152')[0m
+Migrating to AddFnameToUsers (20120127000008)
+  [4;35;1mSQL (20.3ms)[0m   [0mALTER TABLE "users" ADD "fname" varchar(255)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120127000008')[0m
+Migrating to AddSnameToUsers (20120127000108)
+  [4;35;1mSQL (0.5ms)[0m   [0mALTER TABLE "users" ADD "sname" varchar(255)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120127000108')[0m
+Migrating to AddAdminToUsers (20120127000136)
+  [4;35;1mSQL (0.5ms)[0m   [0mALTER TABLE "users" ADD "admin" boolean[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120127000136')[0m
+Migrating to AddUserIdToHoliday (20120127093906)
+  [4;35;1mSQL (0.6ms)[0m   [0mALTER TABLE "holidays" ADD "user_id" integer[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120127093906')[0m
+Migrating to AddAttachmentsPhotoToHoliday (20120315135315)
+  [4;35;1mSQL (0.5ms)[0m   [0mALTER TABLE "holidays" ADD "photo_file_name" varchar(255)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "holidays" ADD "photo_content_type" varchar(255)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "holidays" ADD "photo_file_size" integer[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "holidays" ADD "photo_updated_at" datetime[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20120315135315')[0m
+Migrating to CreatePosts (20120321192421)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "message" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20120321192421')[0m
+Migrating to AddUserIdToPost (20120321193138)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mALTER TABLE "posts" ADD "user_id" integer[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20120321193138')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("holidays")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("posts")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+DEPRECATION WARNING: Kernel#returning has been deprecated in favor of Object#tap. (called from enable_activerecord at /Library/Ruby/Gems/1.8/gems/mislav-will_paginate-2.3.11/lib/will_paginate.rb:39)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mHoliday Load (0.2ms)[0m   [0mSELECT * FROM "holidays" [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'evert.mueller') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'adaline_trantow@johnsonstark.org') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "username", "admin", "password_salt", "fname", "password_hash", "email", "sname") VALUES('2012-04-10 15:46:19', '2012-04-10 15:46:19', 'evert.mueller', NULL, '2cb81b88b01d3c4f3eca08a09edca9735d9dde1d', 'Antonetta', '4f116b623556d8909bacf6d62c5ad307286299b4', 'adaline_trantow@johnsonstark.org', 'Hermiston')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'shanna_walsh') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'stefanie@sanfordwatsica.biz') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("created_at", "updated_at", "username", "admin", "password_salt", "fname", "password_hash", "email", "sname") VALUES('2012-04-10 15:46:19', '2012-04-10 15:46:19', 'shanna_walsh', NULL, 'b4d6686945853b510e96bc2a7312be84792ceb95', 'Mossie', '5f37359d29dd58866ef17f9f4a503f1f87e3ee9b', 'stefanie@sanfordwatsica.biz', 'Von')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'ryann_reinger') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'royce.kemmer@white.biz') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "username", "admin", "password_salt", "fname", "password_hash", "email", "sname") VALUES('2012-04-10 15:46:19', '2012-04-10 15:46:19', 'ryann_reinger', NULL, 'e3e749313eb889e292a4911b7fa8d51bd4aaaeba', 'Jaren', 'cab00ce87d3e00887fedee0572aa425399cb2de6', 'royce.kemmer@white.biz', 'Emmerich')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'royal') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'sallie_roberts@hesselerdman.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("created_at", "updated_at", "username", "admin", "password_salt", "fname", "password_hash", "email", "sname") VALUES('2012-04-10 15:46:19', '2012-04-10 15:46:19', 'royal', NULL, 'c73463089acf6f905d5218fde3171e5b2f64d5e2', 'Johann', 'e69482ecfcd1221d7f741ce10bfcd1fadf0342b1', 'sallie_roberts@hesselerdman.com', 'Thompson')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'jessyca') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'peggie.smith@daniel.net') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "username", "admin", "password_salt", "fname", "password_hash", "email", "sname") VALUES('2012-04-10 15:46:19', '2012-04-10 15:46:19', 'jessyca', NULL, '3125b39bd2183bfeba1e28280a34fc5882b287c1', 'Elouise', '0e5e837e27b22780f7fadfdebe9d7a4fd549ed86', 'peggie.smith@daniel.net', 'Altenwerth')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'shanna_lebsack') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'ryder_ullrich@bins.biz') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("created_at", "updated_at", "username", "admin", "password_salt", "fname", "password_hash", "email", "sname") VALUES('2012-04-10 15:46:19', '2012-04-10 15:46:19', 'shanna_lebsack', NULL, '4d5655b1c2cf5f2eb1d962c43bba0c3ad62cd454', 'Kaycee', '350e7db97b5c243be5b6b215acdd3b78209139cc', 'ryder_ullrich@bins.biz', 'Lehner')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'callie') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'vince.yundt@walterrosenbaum.info') LIMIT 1[0m
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "username", "admin", "password_salt", "fname", "password_hash", "email", "sname") VALUES('2012-04-10 15:46:19', '2012-04-10 15:46:19', 'callie', NULL, '3e9b32352c3efc313ebd60027e24428f0c19cbc3', 'Gabriel', '1b9f083444f774c9de077cf3065dd6e30d43ecee', 'vince.yundt@walterrosenbaum.info', 'Douglas')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'clare') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'demario@torphy.info') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("created_at", "updated_at", "username", "admin", "password_salt", "fname", "password_hash", "email", "sname") VALUES('2012-04-10 15:46:19', '2012-04-10 15:46:19', 'clare', NULL, '1fabb46b0e58fe7159bdc96b54126aff461a4cff', 'Josie', 'ae5793f99a1728a74a47d2de354d313e105d5700', 'demario@torphy.info', 'Sanford')[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'warren') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'clemens@wisozk.info') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "username", "admin", "password_salt", "fname", "password_hash", "email", "sname") VALUES('2012-04-10 15:46:19', '2012-04-10 15:46:19', 'warren', NULL, '8a4cb800ac09256f54faa3335b3634b800ebc111', 'Aaliyah', '7e3f47ba6dcb48ba86f83770ad0ca84b08b52737', 'clemens@wisozk.info', 'Mayer')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'maximilian') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'creola@kemmer.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("created_at", "updated_at", "username", "admin", "password_salt", "fname", "password_hash", "email", "sname") VALUES('2012-04-10 15:46:19', '2012-04-10 15:46:19', 'maximilian', NULL, '1dad843dcb2f959e12cf99d72d7d99285cad9caa', 'Florencio', '546cf9d28994ae8a0dd0e1a347eb04c9a2b8b271', 'creola@kemmer.com', 'Schneider')[0m
+  [4;36;1mUser Load (1.7ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mHoliday Last ID (0.1ms)[0m   [0mSELECT id FROM "holidays" ORDER BY id DESC[0m
+  [4;36;1mHoliday Populate (1.7ms)[0m   [0;1mINSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (1, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 1, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (2, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 1, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (3, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 1, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (4, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 1, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (5, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 1, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (6, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 1, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mHoliday Last ID (0.2ms)[0m   [0mSELECT id FROM "holidays" ORDER BY id DESC[0m
+  [4;36;1mHoliday Populate (1.8ms)[0m   [0;1mINSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (7, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 2, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (8, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 2, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (9, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 2, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (10, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 2, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (11, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 2, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mHoliday Last ID (0.3ms)[0m   [0mSELECT id FROM "holidays" ORDER BY id DESC[0m
+  [4;36;1mHoliday Populate (2.1ms)[0m   [0;1mINSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (12, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 3, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (13, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 3, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (14, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 3, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (15, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 3, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (16, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 3, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (17, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 3, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (18, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 3, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (19, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 3, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (20, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 3, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (21, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 3, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mHoliday Last ID (0.4ms)[0m   [0mSELECT id FROM "holidays" ORDER BY id DESC[0m
+  [4;36;1mHoliday Populate (2.0ms)[0m   [0;1mINSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (22, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 4, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (23, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 4, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (24, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 4, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (25, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 4, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (26, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 4, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (27, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 4, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (28, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 4, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (29, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 4, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (30, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 4, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mHoliday Last ID (0.6ms)[0m   [0mSELECT id FROM "holidays" ORDER BY id DESC[0m
+  [4;36;1mHoliday Populate (1.9ms)[0m   [0;1mINSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (31, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 5, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (32, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 5, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (33, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 5, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (34, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 5, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (35, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 5, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (36, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 5, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (37, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 5, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (38, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 5, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (39, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 5, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (40, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 5, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mHoliday Last ID (0.6ms)[0m   [0mSELECT id FROM "holidays" ORDER BY id DESC[0m
+  [4;36;1mHoliday Populate (1.8ms)[0m   [0;1mINSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (41, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 6, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (42, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 6, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (43, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 6, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (44, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 6, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (45, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 6, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (46, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 6, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (47, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 6, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mHoliday Last ID (0.7ms)[0m   [0mSELECT id FROM "holidays" ORDER BY id DESC[0m
+  [4;36;1mHoliday Populate (2.7ms)[0m   [0;1mINSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (48, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 7, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (49, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 7, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (50, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 7, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (51, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 7, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (52, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 7, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (53, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 7, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (54, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 7, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (55, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 7, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mHoliday Last ID (0.8ms)[0m   [0mSELECT id FROM "holidays" ORDER BY id DESC[0m
+  [4;36;1mHoliday Populate (1.9ms)[0m   [0;1mINSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (56, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 8, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (57, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 8, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (58, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 8, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (59, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 8, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (60, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 8, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (61, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 8, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (62, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 8, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (63, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 8, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (64, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 8, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mHoliday Last ID (0.8ms)[0m   [0mSELECT id FROM "holidays" ORDER BY id DESC[0m
+  [4;36;1mHoliday Populate (1.9ms)[0m   [0;1mINSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (65, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 9, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (66, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 9, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (67, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 9, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (68, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 9, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (69, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 9, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (70, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 9, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (71, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 9, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (72, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 9, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (73, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 9, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mHoliday Last ID (0.9ms)[0m   [0mSELECT id FROM "holidays" ORDER BY id DESC[0m
+  [4;36;1mHoliday Populate (2.0ms)[0m   [0;1mINSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (74, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 10, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (75, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 10, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (76, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 10, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (77, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 10, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (78, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 10, NULL, NULL, NULL, NULL);INSERT INTO "holidays" ("id", "dateleaving", "datereturning", "approved", "declined", "comments", "created_at", "updated_at", "user_id", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (79, '2012/01/01', '2012/03/03', NULL, NULL, NULL, '2012-04-10 16:46:19', '2012-04-10 16:46:19', 10, NULL, NULL, NULL, NULL)[0m
+DEPRECATION WARNING: Kernel#returning has been deprecated in favor of Object#tap. (called from enable_activerecord at /Library/Ruby/Gems/1.8/gems/mislav-will_paginate-2.3.11/lib/will_paginate.rb:39)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2012-04-10 16:46:26) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-04-10 16:46:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (4.4ms)[0m   [0;1mSELECT * FROM "holidays" [0m
+  [4;35;1mHoliday Load (1.1ms)[0m   [0mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 73ms (View: 53, DB: 6) | 200 OK [http://localhost/holidays]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2012-04-10 16:46:33) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered posts/_message_form (12.2ms)
+Completed in 128ms (View: 47, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2012-04-10 16:46:36) [POST]
+  Parameters: {"commit"=>"Update", "action"=>"create", "authenticity_token"=>"mFREImkgYEa6/ngMlZPVvWTLwQIYl9jAHyMijStWeK0=", "controller"=>"posts", "message"=>"Nothing!", "_"=>""}
+  [4;35;1mPost Create (0.4ms)[0m   [0mINSERT INTO "posts" ("created_at", "updated_at", "user_id", "message") VALUES('2012-04-10 15:46:36', '2012-04-10 15:46:36', NULL, 'Nothing!')[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mPost Update (0.3ms)[0m   [0mUPDATE "posts" SET "updated_at" = '2012-04-10 15:46:36', "user_id" = 1 WHERE "id" = 1[0m
+Rendering posts/create
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered posts/_post (5.6ms)
+Completed in 35ms (View: 16, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2012-04-10 16:46:39) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+Redirected to http://localhost:3000/
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2012-04-10 16:46:39) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: Kernel#returning has been deprecated in favor of Object#tap. (called from enable_activerecord at /Library/Ruby/Gems/1.8/gems/mislav-will_paginate-2.3.11/lib/will_paginate.rb:39)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE TABLE "holidays" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "dateleaving" date, "datereturning" date, "approved" boolean, "declined" boolean, "comments" varchar(255), "created_at" datetime, "updated_at" datetime, "user_id" integer, "photo_file_name" varchar(255), "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "message" text, "created_at" datetime, "updated_at" datetime, "user_id" integer) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "password_hash" varchar(255), "password_salt" varchar(255), "created_at" datetime, "updated_at" datetime, "fname" varchar(255), "sname" varchar(255), "admin" boolean) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20120321193138')[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20120126231728')[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20120126235152')[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20120127000008')[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20120127000108')[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20120127000136')[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20120127093906')[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20120315135315')[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20120321192421')[0m
+DEPRECATION WARNING: Kernel#returning has been deprecated in favor of Object#tap. (called from enable_activerecord at /Library/Ruby/Gems/1.8/gems/mislav-will_paginate-2.3.11/lib/will_paginate.rb:39)
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-04-10 17:23:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (5.3ms)[0m   [0;1mSELECT * FROM "holidays" [0m
+  [4;35;1mHoliday Load (1.1ms)[0m   [0mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 80ms (View: 58, DB: 8) | 200 OK [http://localhost/holidays]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-04-10 17:23:58) [GET]
+  Parameters: {"action"=>"index", "page"=>"2", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (4.0ms)[0m   [0mSELECT * FROM "holidays" [0m
+  [4;36;1mHoliday Load (1.0ms)[0m   [0;1mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 12[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 132ms (View: 114, DB: 6) | 200 OK [http://localhost/holidays?page=2]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-04-10 17:24:00) [GET]
+  Parameters: {"action"=>"index", "authenticity_token"=>"mFREImkgYEa6/ngMlZPVvWTLwQIYl9jAHyMijStWeK0=", "page"=>"6", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (4.0ms)[0m   [0;1mSELECT * FROM "holidays" [0m
+  [4;35;1mHoliday Load (1.1ms)[0m   [0mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 60[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 9) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 65ms (View: 47, DB: 6) | 200 OK [http://localhost/holidays?page=6&authenticity_token=mFREImkgYEa6%2FngMlZPVvWTLwQIYl9jAHyMijStWeK0%3D]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-04-10 17:24:03) [GET]
+  Parameters: {"action"=>"index", "authenticity_token"=>"mFREImkgYEa6/ngMlZPVvWTLwQIYl9jAHyMijStWeK0=", "page"=>"1", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (3.9ms)[0m   [0mSELECT * FROM "holidays" [0m
+  [4;36;1mHoliday Load (1.0ms)[0m   [0;1mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 136ms (View: 119, DB: 6) | 200 OK [http://localhost/holidays?authenticity_token=mFREImkgYEa6%2FngMlZPVvWTLwQIYl9jAHyMijStWeK0%3D&page=1&authenticity_token=mFREImkgYEa6%2FngMlZPVvWTLwQIYl9jAHyMijStWeK0%3D]
+
+
+Processing HolidaysController#index (for 127.0.0.1 at 2012-04-10 17:24:06) [GET]
+  Parameters: {"action"=>"index", "authenticity_token"=>"mFREImkgYEa6/ngMlZPVvWTLwQIYl9jAHyMijStWeK0=", "page"=>"7", "controller"=>"holidays"}
+  [4;36;1mHoliday Load (4.0ms)[0m   [0;1mSELECT * FROM "holidays" [0m
+  [4;35;1mHoliday Load (0.9ms)[0m   [0mSELECT * FROM "holidays" ORDER BY created_at DESC LIMIT 12 OFFSET 72[0m
+Rendering template within layouts/application
+Rendering holidays/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 9) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 56ms (View: 40, DB: 5) | 200 OK [http://localhost/holidays?authenticity_token=mFREImkgYEa6%2FngMlZPVvWTLwQIYl9jAHyMijStWeK0%3D&page=7&authenticity_token=mFREImkgYEa6%2FngMlZPVvWTLwQIYl9jAHyMijStWeK0%3D]
+
+
+Processing HolidaysController#show (for 127.0.0.1 at 2012-04-10 17:24:09) [GET]
+  Parameters: {"action"=>"show", "id"=>"76", "controller"=>"holidays"}
+Redirected to http://localhost:3000/login
+  [4;35;1mHoliday Load (0.2ms)[0m   [0mSELECT * FROM "holidays" WHERE ("holidays"."id" = 76) [0m
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/holidays/76]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2012-04-10 17:24:09) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2012-04-10 17:24:12) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+Redirected to http://localhost:3000/
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2012-04-10 17:24:12) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+DEPRECATION WARNING: formatted_holidays_path() has been deprecated. Please pass format to the standard holidays_path method instead. (called from _run_erb_app47views47layouts47application46html46erb at /Users/ant-shimmin/Desktop/Assignment-3/holiday/app/views/layouts/application.html.erb:13)
+Completed in 89ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: Kernel#returning has been deprecated in favor of Object#tap. (called from enable_activerecord at /Library/Ruby/Gems/1.8/gems/mislav-will_paginate-2.3.11/lib/will_paginate.rb:39)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mCREATE TABLE "holidays" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "dateleaving" date, "datereturning" date, "approved" boolean, "declined" boolean, "comments" varchar(255), "created_at" datetime, "updated_at" datetime, "user_id" integer, "photo_file_name" varchar(255), "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "message" text, "created_at" datetime, "updated_at" datetime, "user_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "password_hash" varchar(255), "password_salt" varchar(255), "created_at" datetime, "updated_at" datetime, "fname" varchar(255), "sname" varchar(255), "admin" boolean) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20120321193138')[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20120126231728')[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20120126235152')[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20120127000008')[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20120127000108')[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20120127000136')[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20120127093906')[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20120315135315')[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20120321192421')[0m
