@@ -57,6 +57,8 @@ end
 def destroy
   @holiday = Holiday.find(params[:id])
   @holiday.destroy
+  flash[:notice] = "Holiday Deleted"
+
   redirect_to :action => "index"
 end
 
