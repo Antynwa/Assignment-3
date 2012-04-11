@@ -1,5 +1,5 @@
 require File.dirname(__FILE__) + "/../test_helper"
-
+require 'mocha'
 class HolidaysControllerTest < ActionController::TestCase
   # Replace this with your real tests.
   def test_should_count_form
@@ -13,5 +13,11 @@ class HolidaysControllerTest < ActionController::TestCase
     assert_redirected_to holiday_path(assigns(:holiday))
     assert_equal 'New Holiday Required', flash[:notice]
     end
+def test_should_get_index
+  Holiday.expects(:paginate).returns([].paginate)
+get :index
+  assert_response :success
+  assert assigns(:holidays)
   end
+end
   

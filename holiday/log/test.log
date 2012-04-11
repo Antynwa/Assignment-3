@@ -9117,3 +9117,322 @@ Processing UsersController#create (for 0.0.0.0 at 2012-04-10 17:31:26) [GET]
 Rendering template within layouts/application
 Rendering users/new
 Completed in 22ms (View: 18, DB: 0) | 200 OK [http://test.host/users]
+  [4;36;1mHoliday Load (0.3ms)[0m   [0;1mSELECT * FROM "holidays" WHERE ("holidays"."id" = 10) [0m
+  [4;35;1mHoliday Load (0.2ms)[0m   [0mSELECT * FROM "holidays" WHERE ("holidays"."id" = 20) [0m
+  [4;36;1mHoliday Load (0.2ms)[0m   [0;1mSELECT * FROM "holidays" WHERE ("holidays"."id" = 20) [0m
+  [4;35;1mHoliday Load (0.2ms)[0m   [0mSELECT * FROM "holidays" WHERE ("holidays"."id" = 20) [0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM "users" WHERE 1=1[0m
+  [4;35;1mUser Delete all (0.1ms)[0m   [0mDELETE FROM "users" WHERE 1=1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'foobar') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'foobar') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "username", "admin", "password_salt", "fname", "password_hash", "email", "sname") VALUES('2012-04-11 09:56:39', '2012-04-11 09:56:39', 'foobar', 't', '0af6e19de5ef33387b154132e0a0b2b1bc8ded9d', 'Neil', '4bcd4d959a23773b1c9bf78fc26fd5945ec7a7fc', 'foo@example.com', 'Lennon')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'foobar') LIMIT 1[0m
+  [4;36;1mUser Delete all (0.2ms)[0m   [0;1mDELETE FROM "users" WHERE 1=1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'nonexisting') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'nonexisting') LIMIT 1[0m
+  [4;35;1mUser Delete all (0.2ms)[0m   [0mDELETE FROM "users" WHERE 1=1[0m
+  [4;36;1mUser Delete all (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE 1=1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'foo') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@bar.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'foo') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@bar.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("created_at", "updated_at", "username", "admin", "password_salt", "fname", "password_hash", "email", "sname") VALUES('2012-04-11 09:56:39', '2012-04-11 09:56:39', 'foo', 't', 'e2034b0d47aa764912f7d085af6d2f16c7b6df7a', 'Neil', 'ea779c92a3a0dae953432e2c0397c223f3d79573', 'foo@bar.com', 'Lennon')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'foo@bar.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'foo@bar.com') LIMIT 1[0m
+  [4;36;1mUser Delete all (0.2ms)[0m   [0;1mDELETE FROM "users" WHERE 1=1[0m
+  [4;35;1mUser Delete all (0.0ms)[0m   [0mDELETE FROM "users" WHERE 1=1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'foobar') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'foobar') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "username", "admin", "password_salt", "fname", "password_hash", "email", "sname") VALUES('2012-04-11 09:56:39', '2012-04-11 09:56:39', 'foobar', 't', '9c4444353e7dcdc4971f4023f2fbd0ffb3590d17', 'Neil', '7ebec6a3548d423fa25293547c158fb4ac5d89f7', 'foo@example.com', 'Lennon')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'foobar') LIMIT 1[0m
+  [4;36;1mUser Delete all (0.2ms)[0m   [0;1mDELETE FROM "users" WHERE 1=1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'foo') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@example.com') LIMIT 1[0m
+  [4;35;1mUser Delete all (0.2ms)[0m   [0mDELETE FROM "users" WHERE 1=1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'foo') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'foo') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "username", "admin", "password_salt", "fname", "password_hash", "email", "sname") VALUES('2012-04-11 09:56:39', '2012-04-11 09:56:39', 'foo', 't', '95d2107edb5f9df318a591d00e5ac6218bfaaee8', 'Neil', 'a3bee8c1ea01373c14f7cc78eab83cbc76a6728d', 'foo@example.com', 'Lennon')[0m
+  [4;35;1mUser Delete all (0.2ms)[0m   [0mDELETE FROM "users" WHERE 1=1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'foo') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@example.com') LIMIT 1[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM "users" WHERE 1=1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'foo') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@example.com') LIMIT 1[0m
+  [4;35;1mUser Delete all (0.2ms)[0m   [0mDELETE FROM "users" WHERE 1=1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@example.com') LIMIT 1[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM "users" WHERE 1=1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'foo') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@bar@example.com') LIMIT 1[0m
+  [4;36;1mUser Delete all (0.2ms)[0m   [0;1mDELETE FROM "users" WHERE 1=1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'foo') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@example.com') LIMIT 1[0m
+  [4;35;1mUser Delete all (0.2ms)[0m   [0mDELETE FROM "users" WHERE 1=1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'foo') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'foo') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@example.com') LIMIT 1[0m
+  [4;36;1mUser Delete all (0.2ms)[0m   [0;1mDELETE FROM "users" WHERE 1=1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'odd ^&(@)') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@example.com') LIMIT 1[0m
+  [4;35;1mUser Delete all (0.2ms)[0m   [0mDELETE FROM "users" WHERE 1=1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'foo') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@example.com') LIMIT 1[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM "users" WHERE 1=1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'foo') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'bar@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'foo') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'bar@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("created_at", "updated_at", "username", "admin", "password_salt", "fname", "password_hash", "email", "sname") VALUES('2012-04-11 09:56:39', '2012-04-11 09:56:39', 'foo', 't', '17fac35177bc82d6c8a9ba0731dc6a6fb7b506d9', 'Neil', 'e5e189aeeb602ad8b6fe0b875279181640c1abc2', 'bar@example.com', 'Lennon')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'foo') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'bar@example.com') LIMIT 1[0m
+  [4;36;1mUser Delete all (0.2ms)[0m   [0;1mDELETE FROM "users" WHERE 1=1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'uniquename') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'uniquename') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("created_at", "updated_at", "username", "admin", "password_salt", "fname", "password_hash", "email", "sname") VALUES('2012-04-11 09:56:39', '2012-04-11 09:56:39', 'uniquename', 't', 'a5147c6299031045ef522c455fc2f3b61ab66278', 'Neil', '196c9e2f113c7e373c3c6b62cd0ead3675e62b82', 'foo@example.com', 'Lennon')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'uniquename') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'foo@example.com') LIMIT 1[0m
+
+
+Processing HolidaysController#new (for 0.0.0.0 at 2012-04-11 10:56:41) [GET]
+  Parameters: {"action"=>"new", "controller"=>"holidays"}
+Redirected to http://test.host/login
+Completed in 92ms (DB: 1) | 302 Found [http://test.host/holidays/new]
+
+
+Processing HolidaysController#create (for 0.0.0.0 at 2012-04-11 10:56:41) [POST]
+  Parameters: {"action"=>"create", "holiday"=>{"datereturning"=>"03/02/2012", "user_id"=>"1", "dateleaving"=>"02/02/2012"}, "controller"=>"holidays"}
+  [4;36;1mHoliday Create (0.4ms)[0m   [0;1mINSERT INTO "holidays" ("created_at", "photo_file_size", "comments", "updated_at", "photo_file_name", "photo_content_type", "approved", "declined", "datereturning", "user_id", "photo_updated_at", "dateleaving") VALUES('2012-04-11 09:56:41', NULL, NULL, '2012-04-11 09:56:41', NULL, NULL, NULL, NULL, '2012-03-02', 1, NULL, '2012-02-02')[0m
+[paperclip] Saving attachments.
+
+
+Processing UsersController#create (for 0.0.0.0 at 2012-04-11 10:56:41) [GET]
+  Parameters: {"action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 25ms (View: 21, DB: 0) | 200 OK [http://test.host/users]
+
+
+Processing HolidaysController#new (for 0.0.0.0 at 2012-04-11 11:07:31) [GET]
+  Parameters: {"action"=>"new", "controller"=>"holidays"}
+Redirected to http://test.host/login
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/holidays/new]
+
+
+Processing HolidaysController#create (for 0.0.0.0 at 2012-04-11 11:07:31) [POST]
+  Parameters: {"action"=>"create", "holiday"=>{"datereturning"=>"03/02/2012", "user_id"=>"1", "dateleaving"=>"02/02/2012"}, "controller"=>"holidays"}
+  [4;36;1mHoliday Create (0.4ms)[0m   [0;1mINSERT INTO "holidays" ("created_at", "photo_file_size", "comments", "updated_at", "photo_file_name", "photo_content_type", "approved", "declined", "datereturning", "user_id", "photo_updated_at", "dateleaving") VALUES('2012-04-11 10:07:31', NULL, NULL, '2012-04-11 10:07:31', NULL, NULL, NULL, NULL, '2012-03-02', 1, NULL, '2012-02-02')[0m
+[paperclip] Saving attachments.
+
+
+Processing HolidaysController#index (for 0.0.0.0 at 2012-04-11 11:07:31) [GET]
+  Parameters: {"action"=>"index", "page"=>"2", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (0.3ms)[0m   [0mSELECT * FROM "holidays" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing HolidaysController#new (for 0.0.0.0 at 2012-04-11 11:07:43) [GET]
+  Parameters: {"action"=>"new", "controller"=>"holidays"}
+Redirected to http://test.host/login
+Completed in 6ms (DB: 1) | 302 Found [http://test.host/holidays/new]
+
+
+Processing HolidaysController#create (for 0.0.0.0 at 2012-04-11 11:07:43) [POST]
+  Parameters: {"action"=>"create", "holiday"=>{"datereturning"=>"03/02/2012", "user_id"=>"1", "dateleaving"=>"02/02/2012"}, "controller"=>"holidays"}
+  [4;36;1mHoliday Create (0.5ms)[0m   [0;1mINSERT INTO "holidays" ("created_at", "photo_file_size", "comments", "updated_at", "photo_file_name", "photo_content_type", "approved", "declined", "datereturning", "user_id", "photo_updated_at", "dateleaving") VALUES('2012-04-11 10:07:43', NULL, NULL, '2012-04-11 10:07:43', NULL, NULL, NULL, NULL, '2012-03-02', 1, NULL, '2012-02-02')[0m
+[paperclip] Saving attachments.
+
+
+Processing HolidaysController#index (for 0.0.0.0 at 2012-04-11 11:07:43) [GET]
+  Parameters: {"action"=>"index", "page"=>"2", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (0.3ms)[0m   [0mSELECT * FROM "holidays" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing HolidaysController#new (for 0.0.0.0 at 2012-04-11 11:08:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"holidays"}
+Redirected to http://test.host/login
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/holidays/new]
+
+
+Processing HolidaysController#create (for 0.0.0.0 at 2012-04-11 11:08:19) [POST]
+  Parameters: {"action"=>"create", "holiday"=>{"datereturning"=>"03/02/2012", "user_id"=>"1", "dateleaving"=>"02/02/2012"}, "controller"=>"holidays"}
+  [4;36;1mHoliday Create (0.4ms)[0m   [0;1mINSERT INTO "holidays" ("created_at", "photo_file_size", "comments", "updated_at", "photo_file_name", "photo_content_type", "approved", "declined", "datereturning", "user_id", "photo_updated_at", "dateleaving") VALUES('2012-04-11 10:08:19', NULL, NULL, '2012-04-11 10:08:19', NULL, NULL, NULL, NULL, '2012-03-02', 1, NULL, '2012-02-02')[0m
+[paperclip] Saving attachments.
+
+
+Processing HolidaysController#index (for 0.0.0.0 at 2012-04-11 11:08:19) [GET]
+  Parameters: {"action"=>"index", "page"=>"1", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (0.4ms)[0m   [0mSELECT * FROM "holidays" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing HolidaysController#new (for 0.0.0.0 at 2012-04-11 11:08:27) [GET]
+  Parameters: {"action"=>"new", "controller"=>"holidays"}
+Redirected to http://test.host/login
+Completed in 6ms (DB: 1) | 302 Found [http://test.host/holidays/new]
+
+
+Processing HolidaysController#create (for 0.0.0.0 at 2012-04-11 11:08:27) [POST]
+  Parameters: {"action"=>"create", "holiday"=>{"datereturning"=>"03/02/2012", "user_id"=>"1", "dateleaving"=>"02/02/2012"}, "controller"=>"holidays"}
+  [4;36;1mHoliday Create (0.4ms)[0m   [0;1mINSERT INTO "holidays" ("created_at", "photo_file_size", "comments", "updated_at", "photo_file_name", "photo_content_type", "approved", "declined", "datereturning", "user_id", "photo_updated_at", "dateleaving") VALUES('2012-04-11 10:08:27', NULL, NULL, '2012-04-11 10:08:27', NULL, NULL, NULL, NULL, '2012-03-02', 1, NULL, '2012-02-02')[0m
+[paperclip] Saving attachments.
+
+
+Processing HolidaysController#new (for 0.0.0.0 at 2012-04-11 11:08:41) [GET]
+  Parameters: {"action"=>"new", "controller"=>"holidays"}
+Redirected to http://test.host/login
+Completed in 6ms (DB: 1) | 302 Found [http://test.host/holidays/new]
+
+
+Processing HolidaysController#create (for 0.0.0.0 at 2012-04-11 11:08:41) [POST]
+  Parameters: {"action"=>"create", "holiday"=>{"datereturning"=>"03/02/2012", "user_id"=>"1", "dateleaving"=>"02/02/2012"}, "controller"=>"holidays"}
+  [4;36;1mHoliday Create (0.4ms)[0m   [0;1mINSERT INTO "holidays" ("created_at", "photo_file_size", "comments", "updated_at", "photo_file_name", "photo_content_type", "approved", "declined", "datereturning", "user_id", "photo_updated_at", "dateleaving") VALUES('2012-04-11 10:08:41', NULL, NULL, '2012-04-11 10:08:41', NULL, NULL, NULL, NULL, '2012-03-02', 1, NULL, '2012-02-02')[0m
+[paperclip] Saving attachments.
+
+
+Processing HolidaysController#index (for 0.0.0.0 at 2012-04-11 11:08:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (0.4ms)[0m   [0mSELECT * FROM "holidays" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing HolidaysController#new (for 0.0.0.0 at 2012-04-11 11:08:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"holidays"}
+Redirected to http://test.host/login
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/holidays/new]
+
+
+Processing HolidaysController#create (for 0.0.0.0 at 2012-04-11 11:08:56) [POST]
+  Parameters: {"action"=>"create", "holiday"=>{"datereturning"=>"03/02/2012", "user_id"=>"1", "dateleaving"=>"02/02/2012"}, "controller"=>"holidays"}
+  [4;36;1mHoliday Create (0.7ms)[0m   [0;1mINSERT INTO "holidays" ("created_at", "photo_file_size", "comments", "updated_at", "photo_file_name", "photo_content_type", "approved", "declined", "datereturning", "user_id", "photo_updated_at", "dateleaving") VALUES('2012-04-11 10:08:56', NULL, NULL, '2012-04-11 10:08:56', NULL, NULL, NULL, NULL, '2012-03-02', 1, NULL, '2012-02-02')[0m
+[paperclip] Saving attachments.
+
+
+Processing HolidaysController#index (for 0.0.0.0 at 2012-04-11 11:08:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (0.4ms)[0m   [0mSELECT * FROM "holidays" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing HolidaysController#new (for 0.0.0.0 at 2012-04-11 11:09:05) [GET]
+  Parameters: {"action"=>"new", "controller"=>"holidays"}
+Redirected to http://test.host/login
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/holidays/new]
+
+
+Processing HolidaysController#create (for 0.0.0.0 at 2012-04-11 11:09:05) [POST]
+  Parameters: {"action"=>"create", "holiday"=>{"datereturning"=>"03/02/2012", "user_id"=>"1", "dateleaving"=>"02/02/2012"}, "controller"=>"holidays"}
+  [4;36;1mHoliday Create (0.5ms)[0m   [0;1mINSERT INTO "holidays" ("created_at", "photo_file_size", "comments", "updated_at", "photo_file_name", "photo_content_type", "approved", "declined", "datereturning", "user_id", "photo_updated_at", "dateleaving") VALUES('2012-04-11 10:09:05', NULL, NULL, '2012-04-11 10:09:05', NULL, NULL, NULL, NULL, '2012-03-02', 1, NULL, '2012-02-02')[0m
+[paperclip] Saving attachments.
+
+
+Processing HolidaysController#index (for 0.0.0.0 at 2012-04-11 11:09:05) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (0.3ms)[0m   [0mSELECT * FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+
+
+Processing HolidaysController#new (for 0.0.0.0 at 2012-04-11 11:09:25) [GET]
+  Parameters: {"action"=>"new", "controller"=>"holidays"}
+Redirected to http://test.host/login
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/holidays/new]
+
+
+Processing HolidaysController#create (for 0.0.0.0 at 2012-04-11 11:09:25) [POST]
+  Parameters: {"action"=>"create", "holiday"=>{"datereturning"=>"03/02/2012", "user_id"=>"1", "dateleaving"=>"02/02/2012"}, "controller"=>"holidays"}
+  [4;36;1mHoliday Create (0.5ms)[0m   [0;1mINSERT INTO "holidays" ("created_at", "photo_file_size", "comments", "updated_at", "photo_file_name", "photo_content_type", "approved", "declined", "datereturning", "user_id", "photo_updated_at", "dateleaving") VALUES('2012-04-11 10:09:25', NULL, NULL, '2012-04-11 10:09:25', NULL, NULL, NULL, NULL, '2012-03-02', 1, NULL, '2012-02-02')[0m
+[paperclip] Saving attachments.
+
+
+Processing HolidaysController#index (for 0.0.0.0 at 2012-04-11 11:09:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"holidays"}
+  [4;35;1mHoliday Load (0.4ms)[0m   [0mSELECT * FROM "holidays" [0m
+Rendering template within layouts/application
+Rendering holidays/index
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://test.host/holidays]
