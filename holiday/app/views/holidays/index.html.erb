@@ -20,7 +20,20 @@
 			%>|</p>
 	</div>
 
-			 <div id="content">				
+			 <div id="content" align="center">
+<div class="flickr_pagination" align="center">
+    <div clas="page_info" align="center">
+      <%= page_entries_info @holidays %>
+    </div>
+<h3>Standard Pagination</h3>
+<p></p>
+    <%= will_paginate @holidays , :container => false %>
+<p></p>
+<h3>Ajax Pagination</h3>	
+<p></p>   
+	<%= will_paginate @holidays, :renderer => 'RemoteLinkRenderer' , :container => false, :remote => {:update => "wrapper"} %>
+  </div>
+				
 			           <table width="500" border="1" align="center" class="gridtable" id="meh">
 			    <tr id="">
 
@@ -45,10 +58,9 @@
 									 </div>
 
 			</table>
-<h3> Standard Pagination </h3>
-				<%= will_paginate @holidays %>	
-<h3> Ajax Pagination </h3>	   
-	<%= will_paginate @holidays, :renderer => 'RemoteLinkRenderer' , :remote => {:update => "wrapper"} %>
+
+
+
 					</div>
 
 

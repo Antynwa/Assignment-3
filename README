@@ -1,0 +1,7 @@
+Jamie,
+
+Please use rails gems version 1.3.7 before launching.
+
+I could not gracefully allow the Ajax Pagination to fall back onto HTML when Java is turned off. I have however included two options, one for AJAX Pagination, and one for HTML Pagination. I trust this will be okay.
+
+Antony 
