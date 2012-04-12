@@ -21,14 +21,6 @@ class HolidayTest < ActiveSupport::TestCase
     end
     def test_holiday_should_have_comments
       assert_match 'MyString', holidays(:one).comments
-    end
-    def dateleaving_must_not_be_blank
-      assert new_holiday(:dateleaving => '').errors.on(:dateleaving)
-    end
-     def datereturning
-        assert new_holiday(:datereturning => '').errors.on(:datereturning)
-      end
-    
-    
+    end    
 end
 

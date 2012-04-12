@@ -92,4 +92,7 @@ class UserTest < ActiveSupport::TestCase
     new_user(:username => 'foobar', :password => 'secret').save!
     assert_nil User.authenticate('foobar', 'badpassword')
   end
+
+
+
 end

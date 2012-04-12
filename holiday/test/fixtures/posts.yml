@@ -6,4 +6,6 @@ one:
   user_id: 5
 
 two:
-  message: MyText
+  id: 2
+  message: Shabba
+  user_id: 6
