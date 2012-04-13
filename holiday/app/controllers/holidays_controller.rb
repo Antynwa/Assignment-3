@@ -5,7 +5,7 @@ respond_to do |format|
 format.html # Send the page using HTML
 format.xml { render :xml => @holidays } # Send the page using XML
 format.atom
-@holidays = Holiday.paginate :page => params[:page], :per_page => '5', :order => 'created_at DESC'
+@holidays = Holiday.paginate :page => params[:page], :per_page => '5', :order => 'updated_at DESC'
 end
 end
 
